@@ -15,6 +15,8 @@
 Table of Contents
 :::::::::::::::::
 
+Welcome to 106!
+
 Assignments
 :::::::::::
 

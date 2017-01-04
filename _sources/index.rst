@@ -15,15 +15,13 @@
 Table of Contents
 :::::::::::::::::
 
-Welcome to 106!
-
-Assignments
-:::::::::::
+.. Assignments
+.. :::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   .. :maxdepth: 1
 
-   assignments.rst
+   .. assignments.rst
 
 General Introduction
 ::::::::::::::::::::
@@ -392,7 +390,7 @@ Using RESTAPIs
 
 .. toctree::
    :maxdepth: 2
-   
+
    UsingRESTAPIs/cachingResponses.rst
    UsingRESTAPIs/flickr.rst
 

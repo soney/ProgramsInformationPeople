@@ -628,68 +628,68 @@ Problem Set 1 (due midnight Jan 15)
 
     myTests().main()
 
+.. .. activecode:: ps_1_8
+..     :include: addl_functions_2
+..     :language: python
+..     :hidecode:
+..
+..     **8.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set.
+..
+..     Now, take a look at the following code and related questions, in this code window.
+..     ~~~~
+..     new_str = "'Twas brillig"
+..
+..     y = add_lengths("receipt","receive")
+..
+..     x = random_digit()
+..
+..     z = new_str.find('b')
+..
+..     l = new_str.find("'")
+..
+..     # notice that this line of code is made up of a lot of different expressions
+..     fin_value = square(len(new_str)) + (z - l) + (x * random_digit())
+..
+..     # DO NOT CHANGE ANY CODE ABOVE THIS LINE
+..     # But below here, putting print statements and running the code may help you!
+..
+..     # The following questions are based on that code. All refer to the types of the
+..     #variables and/or expressions after the above code is run.
+..
+..     #####################
+..
+..     # Write a comment explaining each of the following, after each question.
+..     # Don't forget to press **run** to save!
+..
+..     # What is square?
+..
+..     # What type of object does the expression square(len(new_str)) evaluate to?
+..
+..     # What type is z?
+..
+..     # What type is l?
+..
+..     # What type is the expression z-l?
+..
+..     # What type is x?
+..
+..     # What is random_digit? How many inputs does it take?
+..
+..     # What type does the expression x * random_digit() evaluate to?
+..
+..     # Given all this information, what type will fin_value hold once all this code is run?
+..
+..     ====
+..
+..     print "\n\nThere are no tests for this problem"
+..
+
 .. activecode:: ps_1_8
-    :include: addl_functions_2
-    :language: python
-    :hidecode:
-
-    **8.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set.
-
-    Now, take a look at the following code and related questions, in this code window.
-    ~~~~
-    new_str = "'Twas brillig"
-
-    y = add_lengths("receipt","receive")
-
-    x = random_digit()
-
-    z = new_str.find('b')
-
-    l = new_str.find("'")
-
-    # notice that this line of code is made up of a lot of different expressions
-    fin_value = square(len(new_str)) + (z - l) + (x * random_digit())
-
-    # DO NOT CHANGE ANY CODE ABOVE THIS LINE
-    # But below here, putting print statements and running the code may help you!
-
-    # The following questions are based on that code. All refer to the types of the
-    #variables and/or expressions after the above code is run.
-
-    #####################
-
-    # Write a comment explaining each of the following, after each question.
-    # Don't forget to press **run** to save!
-
-    # What is square?
-
-    # What type of object does the expression square(len(new_str)) evaluate to?
-
-    # What type is z?
-
-    # What type is l?
-
-    # What type is the expression z-l?
-
-    # What type is x?
-
-    # What is random_digit? How many inputs does it take?
-
-    # What type does the expression x * random_digit() evaluate to?
-
-    # Given all this information, what type will fin_value hold once all this code is run?
-
-    ====
-
-    print "\n\nThere are no tests for this problem"
-
-
-.. activecode:: ps_1_9
     :language: python
     :autograde: unittest
     :hidecode:
 
-    **9.** Write code to assign the number of characters in the string ``rv`` to a variable ``num_chars``. Then write code to assign the number of words in the string ``rv`` to the variable ``num_words``. (Hint: remember how to split strings?)
+    **8.** Write code to assign the number of characters in the string ``rv`` to a variable ``num_chars``. Then write code to assign the number of words in the string ``rv`` to the variable ``num_words``. (Hint: remember how to split strings?)
     ~~~~
     rv = """Once upon a midnight dreary, while I pondered, weak and weary,
         Over many a quaint and curious volume of forgotten lore,

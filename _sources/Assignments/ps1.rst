@@ -592,11 +592,11 @@ Problem Set
 
     *Consider:* what is the difference between ``mixed_bag[-1]`` and ``mixed_bag[-2]`` (you may want to print out those values or print out information about those values, so you can make sure you know what they are!)?
 
-    Write code to print out the type of the third element of ``mixed_bag``.
+    Write code to print out the **type** of the third element of ``mixed_bag``.
 
-    Write code to assign the **type of the fifth element of** ``mixed_bag`` to a variable called ``fifth_type``.
+    Write code to assign the **type** of the fifth element of ``mixed_bag`` to a variable called ``fifth_type``.
 
-    Write code to assign the **type of the first element of** ``mixed_bag`` to a variable called ``another_type``.
+    Write code to assign the **type** of the first element of ``mixed_bag`` to a variable called ``another_type``.
 
     **Keep in mind:** All ordinal numbers in *instructions*, like "third" or "fifth" refer to the way HUMANS count. How do you write code to find the right things?
     ~~~~

@@ -17,10 +17,10 @@ Table of Contents
 
 Assignments
 :::::::::::
+.. toctree::
    :maxdepth: 1
    Assignments/ps1.rst
 
-.. toctree::
    .. :maxdepth: 1
 
    .. assignments.rst

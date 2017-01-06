@@ -31,7 +31,7 @@ options(
             'course_url':master_url,
             'use_services': 'true',
             'python3': 'false',
-            'basecourse':'506W17'
+            'basecourse':'106W17'
         }
     )
 )

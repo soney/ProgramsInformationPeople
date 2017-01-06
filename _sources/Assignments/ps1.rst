@@ -70,10 +70,8 @@ Problem Set 1 (due midnight Sep 15)
 
 .. _problem_set_1:
 
-Problem Set
------------
 
-**Instructions:** Write the code you want to save in the provided boxes, and click **Run** for each one. That will  *run* your code, so you can see the output, if any, and the result of the tests, if there are any. It will also *save* your code. You should run your code each time you want to save it. You can then load the history of the code you have run and saved. The *last* code you have saved for each problem by the deadline is what will be graded.
+**Instructions:** Click "Show Code" to show code entry boxes. Write the code you want to save in the provided boxes, and click **Run** for each one. That will  *run* your code, so you can see the output, if any, and the result of the tests, if there are any. It will also *save* your code. You should run your code each time you want to save it. You can then load the history of the code you have run and saved. The *last* code you have saved for each problem by the deadline is what will be graded.
 
 
 

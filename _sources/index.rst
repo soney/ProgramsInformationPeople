@@ -15,8 +15,9 @@
 Table of Contents
 :::::::::::::::::
 
-.. Assignments
-.. :::::::::::
+Assignments
+:::::::::::
+Assignments/ps1.rst
 
 .. toctree::
    .. :maxdepth: 1
@@ -83,17 +84,17 @@ Debugging
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
 
-Object Instances
-::::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   PythonTurtle/intro-HelloLittleTurtles.rst
-   PythonTurtle/OurFirstTurtleProgram.rst
-   PythonTurtle/InstancesAHerdofTurtles.rst
-   PythonTurtle/ObjectInstances.rst
-   PythonTurtle/SummaryOfTurtleMethods.rst
+.. Object Instances
+.. ::::::::::::::::
+..
+.. .. toctree::
+..    :maxdepth: 2
+..
+..    PythonTurtle/intro-HelloLittleTurtles.rst
+..    PythonTurtle/OurFirstTurtleProgram.rst
+..    PythonTurtle/InstancesAHerdofTurtles.rst
+..    PythonTurtle/ObjectInstances.rst
+..    PythonTurtle/SummaryOfTurtleMethods.rst
 
 Sequences
 :::::::::

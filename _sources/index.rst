@@ -18,12 +18,9 @@ Table of Contents
 Assignments
 :::::::::::
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+
    Assignments/ps1.rst
-
-   .. :maxdepth: 1
-
-   .. assignments.rst
 
 General Introduction
 ::::::::::::::::::::

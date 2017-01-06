@@ -1,6 +1,6 @@
 :orphan:
 
-Problem Set 1 (due midnight Sep 15)
+Problem Set 1 (due midnight Jan 15)
 ===================================
 
 ..  Copyright (C) Paul Resnick.  Permission is granted to copy, distribute

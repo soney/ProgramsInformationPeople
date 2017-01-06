@@ -80,6 +80,7 @@ Problem Set
 .. activecode:: ps_1_1
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **1.** The variable ``tpa`` currently has the value ``0``. Assign the variable ``tpa`` the value ``6`` .
     ~~~~
@@ -101,6 +102,7 @@ Problem Set
 .. activecode:: ps_1_2
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **2.** Write code to assign the variable ``yb`` to have the same value that variable ``cw`` has. Do not change the first line of code (``cw = "Hello"``). Also, do not "hard code" the result by setting ``yb = "Hello"``. Instead, write code that would work no matter what the current value of ``cw`` is.
     ~~~~
@@ -123,6 +125,7 @@ Problem Set
 .. activecode:: ps_1_3
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **3.** Write code to print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``. (Use the print command!)
     ~~~~
@@ -148,6 +151,7 @@ Problem Set
     :include: addl_functions
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **4.** There is a function we are giving you called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
     ~~~~
@@ -171,6 +175,7 @@ Problem Set
     :include: addl_functions
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **5.** Write code to assign the return value of the function call ``square(3)`` to the variable ``new_number``.
     ~~~~
@@ -191,6 +196,7 @@ Problem Set
 .. activecode:: ps_1_6
     :include: addl_functions
     :language: python
+    :hidecode:
 
     **6.** Write in a comment what each line of this code does. (You should be very specific! This exercise will train your brain for when you write more complicated code.)
     ~~~~
@@ -224,6 +230,7 @@ Problem Set
     :include: addl_functions
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **7.** There are a couple more functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
 
@@ -266,6 +273,7 @@ Problem Set
     :include: addl_functions
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **8.** Now write code that assigns the variable ``newval`` to hold the **return value** of ``greeting("everyone in class")``.
     ~~~~
@@ -287,6 +295,7 @@ Problem Set
 
 .. activecode:: ps_1_9
     :language: python
+    :hidecode:
 
     **9.** This code causes an error. Why? Write a comment in the code window to explain.
     ~~~~
@@ -298,7 +307,7 @@ Problem Set
     :autograde: unittest
     :hidecode:
 
-    **1.** Assign the variable ``fl`` the value of the first element of the string value in ``original_str``. Use string indexing to assign the variable ``last_l`` the value of the last element of the string value in ``original_str``. Write code so that will work no matter how long ``original_str``'s value is.
+    **10.** Assign the variable ``fl`` the value of the first element of the string value in ``original_str``. Use string indexing to assign the variable ``last_l`` the value of the last element of the string value in ``original_str``. Write code so that will work no matter how long ``original_str``'s value is.
     ~~~~
     original_str = "The quick brown rhino jumped over the extremely lazy fox."
 
@@ -323,7 +332,7 @@ Problem Set
     :autograde: unittest
     :hidecode:
 
-    **2.** How long (how many characters) is the string in the variable ``sent``? Write code to assign the length of that string to a variable called ``len_of_sent``.
+    **11.** How long (how many characters) is the string in the variable ``sent``? Write code to assign the length of that string to a variable called ``len_of_sent``.
 
     How long is the string in the variable ``short_sent``? Write code to assign the value of that string's length to a variable ``short_len``.
 

@@ -83,8 +83,8 @@ Debugging
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
 
-Object Instances
-::::::::::::::::
+Drawing with Turtle
+:::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -560,23 +560,23 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-Discussion Section Resources (F16)
-::::::::::::::::::::::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   navhelp.rst
-
-.. toctree::
-   :maxdepth: 2
-
-   InClass/DictionaryAccum.rst
-   InClass/FunctionsExamples.rst
-   InClass/IndefiniteIteration.rst
-   InClass/OptionalKeywordParams.rst
-   InClass/TuplesAndNestedData.rst
+.. Discussion Section Resources (F16)
+.. ::::::::::::::::::::::::::::::::::
+..
+.. .. toctree::
+..    :maxdepth: 2
+..    :hidden:
+..
+..    navhelp.rst
+..
+.. .. toctree::
+..    :maxdepth: 2
+..
+..    InClass/DictionaryAccum.rst
+..    InClass/FunctionsExamples.rst
+..    InClass/IndefiniteIteration.rst
+..    InClass/OptionalKeywordParams.rst
+..    InClass/TuplesAndNestedData.rst
 
 
 Indices and tables

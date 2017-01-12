@@ -52,7 +52,7 @@ it performs **integer division**, which truncates its result down to the next sm
    print 9 / 5.0
    print 5/9
 
-Pay particular attention to the examples above. Note that it truncates, rather than rounding, so ``9/5`` is ` and ``5/9`` is 0.
+Pay particular attention to the examples above. Note that it truncates, rather than rounding, so ``9/5`` is 1 and ``5/9`` is 0.
 
 Take care that you choose
 the correct flavor of the division operator.  If you want a truncated integer output,

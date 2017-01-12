@@ -15,13 +15,12 @@
 Table of Contents
 :::::::::::::::::
 
-.. Assignments
-.. :::::::::::
-
+Assignments
+:::::::::::
 .. toctree::
-   .. :maxdepth: 1
+   :maxdepth: 1
 
-   .. assignments.rst
+   Assignments/ps1.rst
 
 General Introduction
 ::::::::::::::::::::

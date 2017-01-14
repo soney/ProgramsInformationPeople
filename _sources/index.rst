@@ -21,6 +21,7 @@ Assignments
    :maxdepth: 1
 
    Assignments/ps1.rst
+   Assignments/ps2.rst
 
 General Introduction
 ::::::::::::::::::::

@@ -106,6 +106,8 @@ Problem Set 2 (due midnight Jan 22)
 
     # What type is x?
 
+    # What type is y?
+
     # What is random_digit? How many inputs does it take?
 
     # What type does the expression x * random_digit() evaluate to?
@@ -140,7 +142,7 @@ Problem Set 2 (due midnight Jan 22)
    :autograde: unittest
    :hidecode:
 
-   **4.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
+   **4.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``. Note that these should be in separate loops.
    ~~~~
    several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
@@ -190,7 +192,7 @@ Problem Set 2 (due midnight Jan 22)
    **6.** Write code to print out the LENGTH of every word in the English sentence that's stored in the variable ``sent``.
 
    ~~~~
-   sent = "The magical mystery tour is waiting to take you away."
+   sent = "The magical mystery tour is waiting to take you away"
 
 
    =====

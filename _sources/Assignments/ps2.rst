@@ -189,7 +189,7 @@ Problem Set 2 (due midnight Jan 22)
    :autograde: unittest
    :hidecode:
 
-   **6.** Write code to print out the LENGTH of every word in the English sentence that's stored in the variable ``sent``.
+   **6.** Write code to store the LENGTH of every word in the English sentence that's stored in the variable ``sent`` into the variable ``word_lengths``. ``word_lengths`` should be a list where the element at any index i is the length of word i.
 
    ~~~~
    sent = "The magical mystery tour is waiting to take you away"
@@ -203,6 +203,7 @@ Problem Set 2 (due midnight Jan 22)
 
       def testOne(self):
          print "No tests for the moment -- we have to read those!\n"
+         self.assertEqual(word_lengths, map(len, sent.split()), "Testing that word_lengths is equal to the lenth of every word in sent")
 
    myTests().main()
 

@@ -16,53 +16,11 @@ Problem Set 1 (due midnight Jan 15)
 .. assignment::
   :name: PS1
   :assignment_type: problem_set
-  :questions: ps_1_1 100, ps_1_2 100, ps_1_3 100, ps_1_4 100, ps_1_5 50, ps_1_6 200, ps_1_7 100, ps_1_8 100, ps_1_9 100, ps_1_10 0, ps_1_11 50
-  :deadline: 2016-09-30 04:00
-  :points: 1000
+  :questions: ps_1_1 5, ps_1_2 5, ps_1_3 5, ps_1_4 5, ps_1_5 5, ps_1_6 10, ps_1_7 10, ps_1_8 5
+  :deadline: 2017-01-15 04:00
+  :points: 50
   :autograde: unittest
 
-.. assignments for lecture waivers
-.. none for lectures 1 and 2 and 3
-
-.. assignments for end of lecture exercise sets
-.. .. assignment::
-..   :name: lec2_attendance
-..   :assignment_type: lecture_attendance
-..   :questions: lec2_1 10, lec2_2 10, lec2_3 20
-..   :deadline: 2016-09-12 21:10
-..   :points: 50
-..   :autograde: visited
-..   :threshold: 1
-..
-..
-.. .. assignment::
-..   :name: lec3_attendance
-..   :assignment_type: lecture_attendance
-..   :questions: lec3_1 25, lec3_2 25
-..   :deadline: 2016-09-14 21:10
-..   :points: 50
-..   :autograde: visited
-..   :threshold: 1
-..
-.. .. assignments for reading responses
-.. .. assignment::
-..   :name: response_1
-..   :assignment_type: reading_response
-..   :questions: rr_1 100
-..   :points: 100
-..
-.. .. assignment::
-..   :name: response_2
-..   :assignment_type: reading_response
-..   :questions: rr_2 100
-..   :points: 100
-..
-.. .. assignment for DYU
-.. .. assignment::
-..   :name: dyu1
-..   :assignment_type: dyu
-..   :questions: ps1_dyu 100
-..   :points: 100
 
 .. highlight:: python
     :linenothreshold: 500

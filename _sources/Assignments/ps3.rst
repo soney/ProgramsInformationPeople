@@ -72,27 +72,19 @@ Problem Set 3 (due midnight Jan 29)
      :autograde: unittest
      :hidecode:
 
-     **3.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages.
-
-     Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
-
-     (HINT: you don't have to make a big change.)
+     **3.** Assign the variable ``mystery`` to a string that will result in every single ``print`` statement executing. DO NOT modify the conditional statement. Only change the initial value of ``mystery``.
      ~~~~
-     #x = 25
-     #x = 15
-     #x = 5
-     #x = -10
+     mystery = 'X?????' # < - change this
 
-     if x > 20:
-       y = "yes"
-     if x > 10:
-       y = "no"
-     if x < 0:
-       y = "maybe"
-     else:
-       y = "unknown"
-
-     print "y is " + str(y)
+     # DO NOT MODIFY THE CODE BELOW
+     if mystery[0] == 'X':
+      print 'check 1'
+     if len(mystery) <= 3:
+      print 'check 2'
+     if mystery[-1] == 'Y':
+      print 'check 3'
+      if mystery[1] == 'Z':
+        print 'check 4'
 
      =====
 
@@ -101,17 +93,7 @@ Problem Set 3 (due midnight Jan 29)
      class myTests(TestCaseGui):
 
        def testOne(self):
-           print("No tests for the comment, of course -- we can only test stored values!\n")
-           if x == 25:
-               self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
-           elif x == 15:
-               self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
-           elif x == 5:
-               self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
-           elif x == -10:
-               self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
-           else:
-               print "No tests when value of x is %s" % (x)
+        self.assertEqual(mystery, "XZY", "Assign mystery to a value that will result in every print statement executing")
 
      myTests().main()
 

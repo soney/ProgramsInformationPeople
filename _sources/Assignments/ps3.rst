@@ -93,7 +93,7 @@ Problem Set 3 (due midnight Jan 29)
      class myTests(TestCaseGui):
 
        def testOne(self):
-        self.assertEqual(mystery, "XZY", "Assign mystery to a value that will result in every print statement executing")
+        self.assertIn("check 1\ncheck 2\ncheck 3\ncheck 4", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
      myTests().main()
 

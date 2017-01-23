@@ -217,6 +217,7 @@ Problem Set 2 (due midnight Jan 22)
 
 .. activecode:: ps_2_7
     :language: python
+    :hidecode:
 
 
     **7.**

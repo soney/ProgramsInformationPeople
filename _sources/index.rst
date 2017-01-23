@@ -22,6 +22,7 @@ Assignments
 
    Assignments/ps1.rst
    Assignments/ps2.rst
+   Assignments/ps3.rst
 
 General Introduction
 ::::::::::::::::::::

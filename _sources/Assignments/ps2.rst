@@ -15,7 +15,7 @@ Problem Set 2 (due midnight Jan 22)
 .. assignment::
   :name: PS2
   :assignment_type: problem_set
-  :questions: ps_2_1 6, ps_2_2 10, ps_2_3 10, ps_2_4 5, ps_2_5 5, ps_2_6 7, ps_2_7 7
+  :questions: p2_2_1 6, p2_2_2 10, ps_2_3 10, ps_2_4 5, ps_2_5 5, ps_2_6 7, ps_2_7 7
   :deadline: 2017-01-22 04:00
   :points: 50
   :autograde: unittest

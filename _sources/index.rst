@@ -12,8 +12,6 @@
 
 .. _t_o_c:
 
-.. activecode:: book_playground
-   print "This is a code playground. Fill it in with anything you want."
 
 
 Table of Contents
@@ -584,6 +582,8 @@ Unix
 ..    InClass/OptionalKeywordParams.rst
 ..    InClass/TuplesAndNestedData.rst
 
+.. activecode:: book_playground
+   print "This is a code playground. Fill it in with anything you want."
 
 Indices and tables
 ::::::::::::::::::

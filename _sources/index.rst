@@ -561,6 +561,11 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
+.. activecode:: book_playground
+
+   print "This is a code playground. Fill it in with anything you want."
+
+
 .. Discussion Section Resources (F16)
 .. ::::::::::::::::::::::::::::::::::
 ..

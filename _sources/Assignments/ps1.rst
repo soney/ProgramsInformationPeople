@@ -17,7 +17,7 @@ Problem Set 1 (due midnight Jan 15)
   :name: PS1
   :assignment_type: problem_set
   :questions: ps_1_1 5, ps_1_2 5, ps_1_3 5, ps_1_4 5, ps_1_5 5, ps_1_6 10, ps_1_7 10, ps_1_8 5
-  :deadline: 2017-01-15 04:00
+  :deadline: 2017-01-16 04:00
   :points: 50
   :autograde: unittest
 

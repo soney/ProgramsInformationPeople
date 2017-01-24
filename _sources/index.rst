@@ -12,6 +12,10 @@
 
 .. _t_o_c:
 
+.. activecode:: book_playground
+   print "This is a code playground. Fill it in with anything you want."
+
+
 Table of Contents
 :::::::::::::::::
 
@@ -560,23 +564,6 @@ Unix
    Unix/FoldersAndPaths.rst
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
-
-.. datafile::  school_prompt.txt
-   :hide:
-
-   Writing essays for school can be difficult but
-   many students find that by researching their topic that they
-   have more to say and are better informed. Here are the university
-   we require many undergraduate students to take a first year writing requirement
-   so that they can
-   have a solid foundation for their writing skills. This comes
-   in handy for many students.
-   Different schools have different requirements, but everyone uses
-   writing at some point in their academic career, be it essays, research papers,
-   technical write ups, or scripts.
-
-.. activecode:: book_playground
-   print "This is a code playground. Fill it in with anything you want."
 
 
 .. Discussion Section Resources (F16)

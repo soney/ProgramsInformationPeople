@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. The dictionary ``Junior`` shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits taken this semester and assign it to the variable ``credits``. Do not hardcode this -- use dictionary accumulation!
+1. The dictionary ``courses`` shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits taken this semester and assign it to the variable ``credits``. Do not hardcode this -- use dictionary accumulation!
 
 .. activecode:: ee_ch13_01
    :tags: DictionaryAccumulation/AccumulatingResultsFromaDictionary.rst
@@ -27,7 +27,7 @@ Extra Exercises
 
    myTests().main()
 
-1.1 The dictionary ``travel`` contains the number of countries within each continent that Jackie has traveled to. Find the total number of countries that Jackie has been to, and save this number to the variable name ``total``. Do not hard code this! 
+1.1 The dictionary ``travel`` contains the number of countries within each continent that Jackie has traveled to. Find the total number of countries that Jackie has been to, and save this number to the variable name ``total``. Do not hard code this!
 
 .. activecode:: ee_ch13_011
    :tags: DictionaryAccumulation/AccumulatingResultsFromaDictionary.rst
@@ -63,7 +63,7 @@ Extra Exercises
 
    myTests().main()
 
-2. Create a dictionary, ``freq``, that displays each letter in string ``str1`` as the key and its frequency as the value. 
+2. Create a dictionary, ``freq``, that displays each letter in string ``str1`` as the key and its frequency as the value.
 
 .. activecode:: ee_ch13_02
    :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
@@ -80,7 +80,7 @@ Extra Exercises
 
    myTests().main()
 
-2.1 Provided is a string saved to the variable name ``s1``. Create a dictionary named ``counts`` that contains each letter in ``s1`` and the number of times it occurs. 
+2.1 Provided is a string saved to the variable name ``s1``. Create a dictionary named ``counts`` that contains each letter in ``s1`` and the number of times it occurs.
 
 .. activecode:: ee_ch13_021
    :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
@@ -130,11 +130,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testThree(self):
-         self.assertEqual(sorted(freq_words.items()), sorted([('a', 1), ('I', 2), ('wish,', 2), ('with', 2), ('all', 1), ('my', 1), ('heart,', 1), ('to', 1), ('fly', 1), ('dragons,', 1), ('in', 1), ('land', 1), ('apart', 1)]), "Testing that freq_words was created correctly.")     
+         self.assertEqual(sorted(freq_words.items()), sorted([('a', 1), ('I', 2), ('wish,', 2), ('with', 2), ('all', 1), ('my', 1), ('heart,', 1), ('to', 1), ('fly', 1), ('dragons,', 1), ('in', 1), ('land', 1), ('apart', 1)]), "Testing that freq_words was created correctly.")
 
    myTests().main()
 
-3.1 Provided is a string saved to the variable name ``sentence``. Split the string into a list of words, then create a dictionary that contains each word and the number of times it occurs. Save this dictionary to the variable name ``word_counts``. 
+3.1 Provided is a string saved to the variable name ``sentence``. Split the string into a list of words, then create a dictionary that contains each word and the number of times it occurs. Save this dictionary to the variable name ``word_counts``.
 
 .. activecode:: ee_ch13_031
    :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
@@ -176,7 +176,7 @@ Extra Exercises
    :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
 
    sally = "sally sells sea shells by the sea shore"
-      
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -212,7 +212,7 @@ Extra Exercises
 
    myTests().main()
 
-5. Do the same as above but now find the least frequent letter. Create the dictionary ``characters`` that shows each character from string ``sally`` and its frequency. Then, find the least frequent letter in the string and assign the letter to the variable ``worst_char``. 
+5. Do the same as above but now find the least frequent letter. Create the dictionary ``characters`` that shows each character from string ``sally`` and its frequency. Then, find the least frequent letter in the string and assign the letter to the variable ``worst_char``.
 
 .. activecode:: ee_ch13_05
    :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
@@ -255,7 +255,7 @@ Extra Exercises
 
    myTests().main()
 
-6.1 Create a dictionary named ``letter_counts`` that contains each letter and the number of times it occurs in ``string1``. **Challenge:** Letters should not be counted separately as upper-case and lower-case. 
+6.1 Create a dictionary named ``letter_counts`` that contains each letter and the number of times it occurs in ``string1``. **Challenge:** Letters should not be counted separately as upper-case and lower-case.
 
 .. activecode:: ee_ch13_061
    :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
@@ -284,7 +284,7 @@ Extra Exercises
 
    myTests().main()
 
-      
+
 6.2 Create a dictionary called ``low_d`` that keeps track of all the characters in the string ``p`` and notes how many times each character was seen. Make sure that there are no repeats of characters as keys, such that "T" and "t" are both seen as a "t" for example.
 
 .. activecode:: ee_ch13_062

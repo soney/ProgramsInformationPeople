@@ -29,7 +29,7 @@
 .. activecode:: book_playground
      :language: python
      :hidecode:
-   ~~~~
+
    print "This is a code playground. Fill it in with anything you want."
 
 Table of Contents

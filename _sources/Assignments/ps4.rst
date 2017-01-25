@@ -169,7 +169,7 @@ Problem Set 4 (due midnight Feb 5)
 	class myTests(TestCaseGui):
 
 		def testOne(self):
-		   self.assertEqual(num_vowels, 'both', "testing whether longest_word is set correctly")
+		   self.assertEqual(num_vowels, 32, "testing whether num_vowels is set correctly")
 
 		def testOneA(self):
 		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
@@ -195,7 +195,7 @@ Problem Set 4 (due midnight Feb 5)
 	class myTests(TestCaseGui):
 
 		def testOne(self):
-		   self.assertEqual(common_vowel, 'i', "testing whether common_vowel is set correctly")
+		   self.assertEqual(vowel_frequencies, sorted({'e': 8, 'i': 11, 'a': 7, 'o': 3, 'u': 3}), "testing whether vowel_frequencies is set correctly")
 
 		def testOneA(self):
 		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")

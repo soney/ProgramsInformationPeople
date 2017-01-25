@@ -348,7 +348,7 @@ Problem Set 4 (due midnight Feb 5)
 	class myTests(TestCaseGui):
 
 		def testOne(self):
-		   self.assertEqual(most_water_year, 2000, "testing whether longest_word is set correctly")
+		   self.assertEqual(most_water_year, 2014, "testing whether longest_word is set correctly")
 
 		def testOneA(self):
 		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")

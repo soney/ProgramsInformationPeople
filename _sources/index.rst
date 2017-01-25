@@ -10,12 +10,15 @@
    :description: An interactive version of How to Think Like a Computer Scientist, edited for use in the course Programs, Information, and People at the University of Michigan.  Learn to program in Python using this online textbook.
    :keywords: python, informatics
 
+
+.. activecode:: book_playground
+   :language: python
+   :hidecode:
+
+   print "This is a code playground. Fill it in with anything you want."
+
+
 .. _t_o_c:
-
-
-
-Table of Contents
-:::::::::::::::::
 
 Assignments
 :::::::::::
@@ -25,6 +28,7 @@ Assignments
    Assignments/ps1.rst
    Assignments/ps2.rst
    Assignments/ps3.rst
+   Assignments/ps4.rst
 
 General Introduction
 ::::::::::::::::::::
@@ -563,35 +567,9 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-
-.. Discussion Section Resources (F16)
-.. ::::::::::::::::::::::::::::::::::
-..
-.. .. toctree::
-..    :maxdepth: 2
-..    :hidden:
-..
-..    navhelp.rst
-..
-.. .. toctree::
-..    :maxdepth: 2
-..
-..    InClass/DictionaryAccum.rst
-..    InClass/FunctionsExamples.rst
-..    InClass/IndefiniteIteration.rst
-..    InClass/OptionalKeywordParams.rst
-..    InClass/TuplesAndNestedData.rst
-
-.. activecode:: book_playground
-   print "This is a code playground. Fill it in with anything you want."
-
 Indices and tables
 ::::::::::::::::::
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
-
-
-

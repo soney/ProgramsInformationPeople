@@ -208,7 +208,7 @@ Problem Set 4 (due midnight Feb 5)
 	:autograde: unittest
 	:hidecode:
 
-	**8.** The code below contains a specially formatted string named ``january_temp_data`` that contains January temperature information for Ann Arboer for the years 2016 to 2000. Every year is on a different line. There are three "columns", separated by commas. The first column specifies the year, the second column specifies the lowest temperature (in Fahrenheit), and the third colun specifies the highest temperature (see the comment at the top of the code). Write code that will create two dictionaries: ``january_lows`` and ``january_highs`` that map years to low and high temperatures respectively. In both dictionaries, the keys should be **integers** (for each year) and the values should be **integers** for the temperatures. You will get zero credit if you hard code your answer.
+	**8.** The code below contains a specially formatted string named ``january_temp_data`` that contains January temperature information for Ann Arbor for the years 2016 to 2000. Every year is on a different line. There are three "columns", separated by commas. The first column specifies the year, the second column specifies the lowest temperature (in Fahrenheit), and the third colun specifies the highest temperature (see the comment at the top of the code). Write code that will create two dictionaries: ``january_lows`` and ``january_highs`` that map years to low and high temperatures respectively. In both dictionaries, the keys should be **integers** (for each year) and the values should be **integers** for the temperatures. You will get zero credit if you hard code your answer.
 
 	Hint: use ``.split('\n')`` to split the lines of ``january_temp_data`` into a list. Use ``.split(',')`` to split a given line. Use ``int()`` to cast strings to integers.
 	~~~~
@@ -348,7 +348,7 @@ Problem Set 4 (due midnight Feb 5)
 	class myTests(TestCaseGui):
 
 		def testOne(self):
-		   self.assertEqual(most_water_year, 2014, "testing whether longest_word is set correctly")
+		   self.assertEqual(most_water_year, 2014, "testing whether most_water_year is set correctly")
 
 		def testOneA(self):
 		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")

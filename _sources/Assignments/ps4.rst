@@ -56,7 +56,7 @@ Problem Set 4 (due midnight Feb 5)
 	~~~~
 	s = """
 	peter piper picked a peck of pickled peppers;
-	a peck of pickled peppers peter piper picked;
+	a peck of pickled peppers peter picked;
 	if peter piper picked a peck of pickled peppers,
 	where's the peck of pickled peppers peter picked?
 	"""
@@ -70,7 +70,7 @@ Problem Set 4 (due midnight Feb 5)
 	class myTests(TestCaseGui):
 
 		def testOne(self):
-			self.assertEqual(common_letter, 'p', "testing whether common_letter is set correctly")
+			self.assertEqual(common_letter, 'e', "testing whether common_letter is set correctly")
 
 		def testOneA(self):
 			self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")

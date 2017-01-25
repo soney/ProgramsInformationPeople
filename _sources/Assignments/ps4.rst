@@ -106,7 +106,7 @@ Problem Set 4 (due midnight Feb 5)
 	:autograde: unittest
 	:hidecode:
 
-	**4.** Given the string ``sentence`` in the code below, write code to figure out what the longest word is and assign that to the variable ``longest_word``. (Do not hard-code the right answer.)
+	**4.** Given the string ``sentence`` in the code below, write code to figure out what the longest word is and assign that to the variable ``longest_word``. (Do not hard-code the right answer.) Note that you don't actually need to use a dictionary.
 	~~~~
 	sentence = "singing in the rain and playing in the rain are two entirely different situations but both can be fun"
 
@@ -130,7 +130,7 @@ Problem Set 4 (due midnight Feb 5)
 	:autograde: unittest
 	:hidecode:
 
-	**5.** Like the above problem, you are given the string ``sentence`` in the code below. However, this time, find the longest word **that does not contain** the letter "i" and set ``longest_no_vowels`` to that word. (Do not hard-code the right answer.)
+	**5.** Like the above problem, you are given the string ``sentence`` in the code below. However, this time, find the longest word **that does not contain** the letter "i" and set ``longest_no_i`` to that word. (Do not hard-code the right answer.)
 	~~~~
 	sentence = "singing in the rain and playing in the rain are two entirely different situations but both can be fun"
 
@@ -143,7 +143,7 @@ Problem Set 4 (due midnight Feb 5)
 	class myTests(TestCaseGui):
 
 		def testOne(self):
-			self.assertEqual(longest_no_vowels, 'both', "testing whether longest_no_vowels is set correctly")
+			self.assertEqual(longest_no_i, 'both', "testing whether longest_no_i is set correctly")
 
 		def testOneA(self):
 			self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")

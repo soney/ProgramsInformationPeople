@@ -183,7 +183,7 @@ Problem Set 4 (due midnight Feb 5)
 
 	**7.** Write code that will create a dictionary ``vowel_frequencies`` where the keys are the five vowels and the values are how often the vowel appears in the string ``s``. Then, using ``vowel_frequencies``, determine the most common vowel in ``s`` and assign the result to the variable ``common_vowel``. Use dictionary accumulation and do not hard code the answer.
 	~~~~
-	s = "singing in the rain and playing in the rain are two entirely different situations but both can be fun"
+	s = "singing in the rain and playing in the rain are two entirely different situations but both can be good fun"
 	vowels = ['a','e','i','o','u']
 
 	# Write your code here.
@@ -195,7 +195,8 @@ Problem Set 4 (due midnight Feb 5)
 	class myTests(TestCaseGui):
 
 		def testOne(self):
-		   self.assertEqual(vowel_frequencies, sorted({'e': 8, 'i': 11, 'a': 7, 'o': 3, 'u': 3}), "testing whether vowel_frequencies is set correctly")
+		   self.assertEqual(sorted(vowel_frequencies), sorted({'e': 8, 'i': 11, 'a': 7, 'o': 5, 'u': 3}), "testing whether vowel_frequencies is set correctly")
+		   self.assertEqual(sorted(vowel_frequencies.values()), sorted({'e': 8, 'i': 11, 'a': 7, 'o': 5, 'u': 3}.values()), "testing whether vowel_frequencies is set correctly")
 
 		def testOneA(self):
 		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
@@ -242,7 +243,12 @@ Problem Set 4 (due midnight Feb 5)
 	class myTests(TestCaseGui):
 
 		def testOne(self):
-		   self.assertEqual(num_vowels, 'both', "testing whether longest_word is set correctly")
+			lows = {2000: -2, 2001: 1, 2002: 11, 2003: -5, 2004: -6, 2005: -3, 2006: 18, 2007: 5, 2008: 3, 2009: -10, 2010: 3, 2011: 1, 2012: 2, 2013: -3, 2014: -14, 2015: -3, 2016: 6}
+			highs = {2000: 56, 2001: 43, 2002: 55, 2003: 47, 2004: 55, 2005: 56, 2006: 53, 2007: 50, 2008: 62, 2009: 39, 2010: 47, 2011: 52, 2012: 55, 2013: 60, 2014: 43, 2015: 41, 2016: 51}
+			self.assertEqual(sorted(january_lows), sorted(lows), "testing whether lows is set correctly")
+			self.assertEqual(sorted(january_lows.values()), sorted(lows.values()), "testing whether lows is set correctly")
+			self.assertEqual(sorted(january_highs), sorted(highs), "testing whether highs is set correctly")
+			self.assertEqual(sorted(january_highs.values()), sorted(highs.values()), "testing whether highs is set correctly")
 
 		def testOneA(self):
 		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
@@ -254,7 +260,7 @@ Problem Set 4 (due midnight Feb 5)
 	:autograde: unittest
 	:hidecode:
 
-	**9.** The code below contains the same string ``january_temp_data`` as before. This time, write code that will determine which year had the largest *difference* between the lowest and highest temperature. Store the year as an integer in a variable named``biggest_temp_diff_year``. You will get zero credit if you code your answer.
+	**9.** The code below contains the same string ``january_temp_data`` as before. This time, write code that will determine which year had the largest *difference* between the lowest and highest temperature. Store the year as an integer in a variable named ``biggest_temp_diff_year``. You will get zero credit if you code your answer.
 	~~~~
 	# COLUMNS:
 	# 0: year
@@ -287,7 +293,7 @@ Problem Set 4 (due midnight Feb 5)
 	class myTests(TestCaseGui):
 
 		def testOne(self):
-		   self.assertEqual(num_vowels, 'both', "testing whether longest_word is set correctly")
+		   self.assertEqual(biggest_temp_diff_year, 2013, "testing whether biggest_temp_diff_year is set correctly")
 
 		def testOneA(self):
 		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
@@ -299,7 +305,7 @@ Problem Set 4 (due midnight Feb 5)
 	:autograde: unittest
 	:hidecode:
 
-	**10.** The code below contains a string ``january_temp_data`` with the same format as before, but with more data (see the "COLUMNS" comment at the beginning of the code). This time, write code that will determine which year had most **precipitation + snowfall**. You will get zero credit if you hard code your answer.
+	**10.** The code below contains a string ``january_temp_data`` with the same format as before, but with more data (see the "COLUMNS" comment at the beginning of the code). This time, write code that will determine which year had most **precipitation + snowfall** and store that year as an integer in the variable ``most_water_year``. You will get zero credit if you hard code your answer.
 	~~~~
 	# COLUMNS:
 	#  0: year
@@ -342,7 +348,7 @@ Problem Set 4 (due midnight Feb 5)
 	class myTests(TestCaseGui):
 
 		def testOne(self):
-		   self.assertEqual(num_vowels, 'both', "testing whether longest_word is set correctly")
+		   self.assertEqual(most_water_year, 2000, "testing whether longest_word is set correctly")
 
 		def testOneA(self):
 		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")

@@ -307,3 +307,503 @@ Extra Exercises
    myTests().main()
 
 
+7.1 The string ``state_data`` contains a specially formatted string that contains population information for various states. Every state is on a different line. There are four "columns": state name, abbreviation, region, and population. Every column is separated by a comma. Use a ``for`` loop to loop through every line of ``state_data`` and print out each line.
+
+Hint: use ``.split('\n')`` to split the lines of ``state_data`` into a list.
+
+.. activecode:: ee_ch13_071
+   :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
+
+   # COLUMNS:
+   # 0: state name
+   # 1: state abbreviation
+   # 2: region
+   # 3: population
+
+   state_data = """Alabama,         AL,     South,   4849377
+      Alaska,          AK,      West,    736732
+      Arizona,         AZ,      West,   6731484
+      Arkansas,        AR,     South,   2966369
+      California,      CA,      West,  38802500
+      Colorado,        CO,      West,   5355866
+      Connecticut,     CT, Northeast,   3596677
+      Delaware,        DE,     South,    935614
+      Florida,         FL,     South,  19893297
+      Georgia,         GA,     South,  10097343
+      Hawaii,          HI,      West,   1419561
+      Idaho,           ID,      West,   1634464
+      Illinois,        IL,   Midwest,  12880580
+      Indiana,         IN,   Midwest,   6596855
+      Iowa,            IA,   Midwest,   3107126
+      Kansas,          KS,   Midwest,   2904021
+      Kentucky,        KY,     South,   4413457
+      Louisiana,       LA,     South,   4649676
+      Maine,           ME, Northeast,   1330089
+      Maryland,        MD,     South,   5976407
+      Massachusetts,   MA, Northeast,   6745408
+      Michigan,        MI,   Midwest,   9909877
+      Minnesota,       MN,   Midwest,   5457173
+      Mississippi,     MS,     South,   2994079
+      Missouri,        MO,   Midwest,   6063589
+      Montana,         MT,      West,   1023579
+      Nebraska,        NE,   Midwest,   1881503
+      Nevada,          NV,      West,   2839099
+      New Hampshire,   NH, Northeast,   1326813
+      New Jersey,      NJ, Northeast,   8938175
+      New Mexico,      NM,      West,   2085572
+      New York,        NY, Northeast,  19746227
+      North Carolina,  NC,     South,   9943964
+      North Dakota,    ND,   Midwest,    739482
+      Ohio,            OH,   Midwest,  11594163
+      Oklahoma,        OK,     South,   3878051
+      Oregon,          OR,      West,   3970239
+      Pennsylvania,    PA, Northeast,  12787209
+      Rhode Island,    RI, Northeast,   1055173
+      South Carolina,  SC,     South,   4832482
+      South Dakota,    SD,   Midwest,    853175
+      Tennessee,       TN,     South,   6549352
+      Texas,           TX,     South,  26956958
+      Utah,            UT,      West,   2942902
+      Vermont,         VT, Northeast,    626562
+      Virginia,        VA,     South,   8326289
+      Washington,      WA,      West,   7061530
+      West Virginia,   WV,     South,   1850326
+      Wisconsin,       WI,   Midwest,   5757564
+      Wyoming,         WY,      West,    584153"""
+
+   # COLUMNS:
+   # 0: state name
+   # 1: state abbreviation
+   # 2: region
+   # 3: population
+
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertIn("Michigan,        MI,   Midwest,   9909877", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+      def testOneA(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+7.2 We have ``state_data`` from before, but this time for every state, only print the state abbreviation (**MI** for Michigan). You may use your code from the previous problem. Your output should contain "AL" on one line, "AK" on the next, etc.
+
+Hint: use ``.split(',')`` to split a given line of ``state_data`` by commas. You may use ``.strip()`` on any string to remove left and right whitespace.
+
+.. activecode:: ee_ch13_072
+   :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
+
+   # COLUMNS:
+   # 0: state name
+   # 1: state abbreviation
+   # 2: region
+   # 3: population
+
+   state_data = """Alabama,         AL,     South,   4849377
+      Alaska,          AK,      West,    736732
+      Arizona,         AZ,      West,   6731484
+      Arkansas,        AR,     South,   2966369
+      California,      CA,      West,  38802500
+      Colorado,        CO,      West,   5355866
+      Connecticut,     CT, Northeast,   3596677
+      Delaware,        DE,     South,    935614
+      Florida,         FL,     South,  19893297
+      Georgia,         GA,     South,  10097343
+      Hawaii,          HI,      West,   1419561
+      Idaho,           ID,      West,   1634464
+      Illinois,        IL,   Midwest,  12880580
+      Indiana,         IN,   Midwest,   6596855
+      Iowa,            IA,   Midwest,   3107126
+      Kansas,          KS,   Midwest,   2904021
+      Kentucky,        KY,     South,   4413457
+      Louisiana,       LA,     South,   4649676
+      Maine,           ME, Northeast,   1330089
+      Maryland,        MD,     South,   5976407
+      Massachusetts,   MA, Northeast,   6745408
+      Michigan,        MI,   Midwest,   9909877
+      Minnesota,       MN,   Midwest,   5457173
+      Mississippi,     MS,     South,   2994079
+      Missouri,        MO,   Midwest,   6063589
+      Montana,         MT,      West,   1023579
+      Nebraska,        NE,   Midwest,   1881503
+      Nevada,          NV,      West,   2839099
+      New Hampshire,   NH, Northeast,   1326813
+      New Jersey,      NJ, Northeast,   8938175
+      New Mexico,      NM,      West,   2085572
+      New York,        NY, Northeast,  19746227
+      North Carolina,  NC,     South,   9943964
+      North Dakota,    ND,   Midwest,    739482
+      Ohio,            OH,   Midwest,  11594163
+      Oklahoma,        OK,     South,   3878051
+      Oregon,          OR,      West,   3970239
+      Pennsylvania,    PA, Northeast,  12787209
+      Rhode Island,    RI, Northeast,   1055173
+      South Carolina,  SC,     South,   4832482
+      South Dakota,    SD,   Midwest,    853175
+      Tennessee,       TN,     South,   6549352
+      Texas,           TX,     South,  26956958
+      Utah,            UT,      West,   2942902
+      Vermont,         VT, Northeast,    626562
+      Virginia,        VA,     South,   8326289
+      Washington,      WA,      West,   7061530
+      West Virginia,   WV,     South,   1850326
+      Wisconsin,       WI,   Midwest,   5757564
+      Wyoming,         WY,      West,    584153"""
+
+   # COLUMNS:
+   # 0: state name
+   # 1: state abbreviation
+   # 2: region
+   # 3: population
+
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertIn("MI\n", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+      def testOneA(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+7.3 We have ``state_data`` from before. This time, create a **dictionary** called ``state_abbreviations`` that maps state abbreviations to their names. For example, ``"MI"`` should be mapped to ``"Michigan"``.
+
+Hint: Use ``.strip()`` on any string to remove left and right whitespace.
+
+
+   :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
+
+   state_data = """Alabama,AL,South,4849377
+   Alaska,AK,West,736732
+   Arizona,AZ,West,6731484
+   Arkansas,AR,South,2966369
+   California,CA,West,38802500
+   Colorado,CO,West,5355866
+   Connecticut,CT,Northeast,3596677
+   Delaware,DE,South,935614
+   Florida,FL,South,19893297
+   Georgia,GA,South,10097343
+   Hawaii,HI,West,1419561
+   Idaho,ID,West,1634464
+   Illinois,IL,Midwest,12880580
+   Indiana,IN,Midwest,6596855
+   Iowa,IA,Midwest,3107126
+   Kansas,KS,Midwest,2904021
+   Kentucky,KY,South,4413457
+   Louisiana,LA,South,4649676
+   Maine,ME,Northeast,1330089
+   Maryland,MD,South,5976407
+   Massachusetts,MA,Northeast,6745408
+   Michigan,MI,Midwest,9909877
+   Minnesota,MN,Midwest,5457173
+   Mississippi,MS,South,2994079
+   Missouri,MO,Midwest,6063589
+   Montana,MT,West,1023579
+   Nebraska,NE,Midwest,1881503
+   Nevada,NV,West,2839099
+   New Hampshire,NH,Northeast,1326813
+   New Jersey,NJ,Northeast,8938175
+   New Mexico,NM,West,2085572
+   New York,NY,Northeast,19746227
+   North Carolina,NC,South,9943964
+   North Dakota,ND,Midwest,739482
+   Ohio,OH,Midwest,11594163
+   Oklahoma,OK,South,3878051
+   Oregon,OR,West,3970239
+   Pennsylvania,PA,Northeast,12787209
+   Rhode Island,RI,Northeast,1055173
+   South Carolina,SC,South,4832482
+   South Dakota,SD,Midwest,853175
+   Tennessee,TN,South,6549352
+   Texas,TX,South,26956958
+   Utah,UT,West,2942902
+   Vermont,VT,Northeast,626562
+   Virginia,VA,South,8326289
+   Washington,WA,West,7061530
+   West Virginia,WV,South,1850326
+   Wisconsin,WI,Midwest,5757564
+   Wyoming,WY,West,584153"""
+
+   # COLUMNS:
+   # 0: state name
+   # 1: state abbreviation
+   # 2: region
+   # 3: population
+
+
+   state_abbreviations = {}
+
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(state_abbreviations['MI'], "Michigan", "Testing MI abbreviation")
+         self.assertEqual(state_abbreviations['PA'], "Pennsylvania", "Testing PA abbreviation")
+         self.assertEqual(state_abbreviations['MA'], "Massachusetts", "Testing MA abbreviation")
+
+      def testOneA(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+
+7.4 We have ``state_data`` from before. This time, use **accumulation** to find the **least** populous state. Assign that state's name to the variable ``least_pop``.
+
+Hint: You don't need to use a dictionary to do this.
+
+.. activecode:: ee_ch13_074
+   :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
+
+
+   state_data = """Alabama,AL,South,4849377
+   Alaska,AK,West,736732
+   Arizona,AZ,West,6731484
+   Arkansas,AR,South,2966369
+   California,CA,West,38802500
+   Colorado,CO,West,5355866
+   Connecticut,CT,Northeast,3596677
+   Delaware,DE,South,935614
+   Florida,FL,South,19893297
+   Georgia,GA,South,10097343
+   Hawaii,HI,West,1419561
+   Idaho,ID,West,1634464
+   Illinois,IL,Midwest,12880580
+   Indiana,IN,Midwest,6596855
+   Iowa,IA,Midwest,3107126
+   Kansas,KS,Midwest,2904021
+   Kentucky,KY,South,4413457
+   Louisiana,LA,South,4649676
+   Maine,ME,Northeast,1330089
+   Maryland,MD,South,5976407
+   Massachusetts,MA,Northeast,6745408
+   Michigan,MI,Midwest,9909877
+   Minnesota,MN,Midwest,5457173
+   Mississippi,MS,South,2994079
+   Missouri,MO,Midwest,6063589
+   Montana,MT,West,1023579
+   Nebraska,NE,Midwest,1881503
+   Nevada,NV,West,2839099
+   New Hampshire,NH,Northeast,1326813
+   New Jersey,NJ,Northeast,8938175
+   New Mexico,NM,West,2085572
+   New York,NY,Northeast,19746227
+   North Carolina,NC,South,9943964
+   North Dakota,ND,Midwest,739482
+   Ohio,OH,Midwest,11594163
+   Oklahoma,OK,South,3878051
+   Oregon,OR,West,3970239
+   Pennsylvania,PA,Northeast,12787209
+   Rhode Island,RI,Northeast,1055173
+   South Carolina,SC,South,4832482
+   South Dakota,SD,Midwest,853175
+   Tennessee,TN,South,6549352
+   Texas,TX,South,26956958
+   Utah,UT,West,2942902
+   Vermont,VT,Northeast,626562
+   Virginia,VA,South,8326289
+   Washington,WA,West,7061530
+   West Virginia,WV,South,1850326
+   Wisconsin,WI,Midwest,5757564
+   Wyoming,WY,West,584153"""
+
+   # COLUMNS:
+   # 0: state name
+   # 1: state abbreviation
+   # 2: region
+   # 3: population
+
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(least_pop, 'Wyoming')
+
+      def testOneA(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+7.5 We have ``state_data`` from before. This time, use **dictionary accumulation** to create a dictionary called ``region_pop`` that maps *regions* (e.g. Midwest) to the total population for that region. Then, use the max accumulation pattern to find the **most** populous region and store it in ``high_region_pop``.
+
+Hint: Use ``int()`` to cast strings to integers.
+
+.. activecode:: ee_ch13_075
+   :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
+
+   # COLUMNS:
+   # 0: state name
+   # 1: state abbreviation
+   # 2: region
+   # 3: population
+
+   state_data = """Alabama,AL,South,4849377
+   Alaska,AK,West,736732
+   Arizona,AZ,West,6731484
+   Arkansas,AR,South,2966369
+   California,CA,West,38802500
+   Colorado,CO,West,5355866
+   Connecticut,CT,Northeast,3596677
+   Delaware,DE,South,935614
+   Florida,FL,South,19893297
+   Georgia,GA,South,10097343
+   Hawaii,HI,West,1419561
+   Idaho,ID,West,1634464
+   Illinois,IL,Midwest,12880580
+   Indiana,IN,Midwest,6596855
+   Iowa,IA,Midwest,3107126
+   Kansas,KS,Midwest,2904021
+   Kentucky,KY,South,4413457
+   Louisiana,LA,South,4649676
+   Maine,ME,Northeast,1330089
+   Maryland,MD,South,5976407
+   Massachusetts,MA,Northeast,6745408
+   Michigan,MI,Midwest,9909877
+   Minnesota,MN,Midwest,5457173
+   Mississippi,MS,South,2994079
+   Missouri,MO,Midwest,6063589
+   Montana,MT,West,1023579
+   Nebraska,NE,Midwest,1881503
+   Nevada,NV,West,2839099
+   New Hampshire,NH,Northeast,1326813
+   New Jersey,NJ,Northeast,8938175
+   New Mexico,NM,West,2085572
+   New York,NY,Northeast,19746227
+   North Carolina,NC,South,9943964
+   North Dakota,ND,Midwest,739482
+   Ohio,OH,Midwest,11594163
+   Oklahoma,OK,South,3878051
+   Oregon,OR,West,3970239
+   Pennsylvania,PA,Northeast,12787209
+   Rhode Island,RI,Northeast,1055173
+   South Carolina,SC,South,4832482
+   South Dakota,SD,Midwest,853175
+   Tennessee,TN,South,6549352
+   Texas,TX,South,26956958
+   Utah,UT,West,2942902
+   Vermont,VT,Northeast,626562
+   Virginia,VA,South,8326289
+   Washington,WA,West,7061530
+   West Virginia,WV,South,1850326
+   Wisconsin,WI,Midwest,5757564
+   Wyoming,WY,West,584153"""
+
+   # COLUMNS:
+   # 0: state name
+   # 1: state abbreviation
+   # 2: region
+   # 3: population
+
+   region_pop = {}
+
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+      def testOne(self):
+         answer = {'South': 119113041, 'West': 75187681, 'Northeast': 56152333, 'Midwest': 67745108}
+         self.assertEqual(sorted(region_pop.values()), sorted(answer.values()), "Checking values")
+         self.assertEqual(sorted(region_pop.keys()), sorted(answer.keys()), "Checking values")
+         self.assertEqual(high_region_pop, "South", "Checking high_region_pop")
+
+      def testOneA(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+7.6 We have ``state_data`` from before. Assign ``most_pop_midwest`` to the name of the state whose region is ``"Midwest"`` with the highest population.
+
+.. activecode:: ee_ch13_076
+   :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
+
+   # COLUMNS:
+   # 0: state name
+   # 1: state abbreviation
+   # 2: region
+   # 3: population
+
+   state_data = """Alabama,AL,South,4849377
+   Alaska,AK,West,736732
+   Arizona,AZ,West,6731484
+   Arkansas,AR,South,2966369
+   California,CA,West,38802500
+   Colorado,CO,West,5355866
+   Connecticut,CT,Northeast,3596677
+   Delaware,DE,South,935614
+   Florida,FL,South,19893297
+   Georgia,GA,South,10097343
+   Hawaii,HI,West,1419561
+   Idaho,ID,West,1634464
+   Illinois,IL,Midwest,12880580
+   Indiana,IN,Midwest,6596855
+   Iowa,IA,Midwest,3107126
+   Kansas,KS,Midwest,2904021
+   Kentucky,KY,South,4413457
+   Louisiana,LA,South,4649676
+   Maine,ME,Northeast,1330089
+   Maryland,MD,South,5976407
+   Massachusetts,MA,Northeast,6745408
+   Michigan,MI,Midwest,9909877
+   Minnesota,MN,Midwest,5457173
+   Mississippi,MS,South,2994079
+   Missouri,MO,Midwest,6063589
+   Montana,MT,West,1023579
+   Nebraska,NE,Midwest,1881503
+   Nevada,NV,West,2839099
+   New Hampshire,NH,Northeast,1326813
+   New Jersey,NJ,Northeast,8938175
+   New Mexico,NM,West,2085572
+   New York,NY,Northeast,19746227
+   North Carolina,NC,South,9943964
+   North Dakota,ND,Midwest,739482
+   Ohio,OH,Midwest,11594163
+   Oklahoma,OK,South,3878051
+   Oregon,OR,West,3970239
+   Pennsylvania,PA,Northeast,12787209
+   Rhode Island,RI,Northeast,1055173
+   South Carolina,SC,South,4832482
+   South Dakota,SD,Midwest,853175
+   Tennessee,TN,South,6549352
+   Texas,TX,South,26956958
+   Utah,UT,West,2942902
+   Vermont,VT,Northeast,626562
+   Virginia,VA,South,8326289
+   Washington,WA,West,7061530
+   West Virginia,WV,South,1850326
+   Wisconsin,WI,Midwest,5757564
+   Wyoming,WY,West,584153"""
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(most_pop_midwest, "Illinois", "Checking most_pop_midwest")
+
+      def testOneA(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+   myTests().main()

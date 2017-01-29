@@ -15,7 +15,7 @@ Problem Set 4 (due midnight Feb 5)
 .. assignment::
 	:name: PS4
 	:assignment_type: problem_set
-	:questions: ps_4_1 5, ps_4_2 5, ps_4_3 5, ps_4_4 5, ps_4_5 5, ps_3_6 5, ps_4_7 5, ps_4_8 5, ps_4_9 5, ps_4_10 5
+	:questions: ps_4_1 5, ps_4_2 5, ps_4_3 5, ps_4_4 5, ps_4_5 5, ps_4_6 5, ps_4_7 5, ps_4_8 5, ps_4_9 5, ps_4_10 5
 	:deadline: 2017-02-06 04:00
 	:points: 50
 	:autograde: unittest

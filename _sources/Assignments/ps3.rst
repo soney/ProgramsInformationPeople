@@ -128,8 +128,6 @@ Problem Set 3 (due midnight Jan 29)
 
      **5** Write code to count the number of words in string ``sentence`` that start with the character ``q``. Assign that number to the variable ``num_start_q``.
 
-  	HINT 1: You do NOT want to use the ``in`` operator this time.
-
      ~~~~
      sentence = "I have a question and inquiry about the quakes that quiver the quail in the quads in the city of Albuquerque."
      =====

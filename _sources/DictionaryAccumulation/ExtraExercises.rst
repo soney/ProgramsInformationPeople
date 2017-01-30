@@ -482,6 +482,7 @@ Hint: use ``.split(',')`` to split a given line of ``state_data`` by commas. You
 Hint: Use ``.strip()`` on any string to remove left and right whitespace.
 
 
+.. activecode:: ee_ch13_073
    :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
 
    state_data = """Alabama,AL,South,4849377

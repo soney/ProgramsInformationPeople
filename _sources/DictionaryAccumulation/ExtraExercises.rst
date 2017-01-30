@@ -479,8 +479,6 @@ Hint: use ``.split(',')`` to split a given line of ``state_data`` by commas. You
 
 7.3 We have ``state_data`` from before. This time, create a **dictionary** called ``state_abbreviations`` that maps state abbreviations to their names. For example, ``"MI"`` should be mapped to ``"Michigan"``.
 
-Hint: Use ``.strip()`` on any string to remove left and right whitespace.
-
 
 .. activecode:: ee_ch13_073
    :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
@@ -544,6 +542,8 @@ Hint: Use ``.strip()`` on any string to remove left and right whitespace.
 
 
    state_abbreviations = {}
+   for line in state_data.split('\n'):
+      cells = line.split(',')
 
 
 
@@ -566,6 +566,7 @@ Hint: Use ``.strip()`` on any string to remove left and right whitespace.
 7.4 We have ``state_data`` from before. This time, use **accumulation** to find the **least** populous state. Assign that state's name to the variable ``least_pop``.
 
 Hint: You don't need to use a dictionary to do this.
+Hint: Use ``int()`` to cast the population as an integer
 
 .. activecode:: ee_ch13_074
    :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
@@ -628,6 +629,8 @@ Hint: You don't need to use a dictionary to do this.
    # 2: region
    # 3: population
 
+   for line in state_data.split('\n'):
+      cells = line.split(',')
 
 
    =====
@@ -715,7 +718,8 @@ Hint: Use ``int()`` to cast strings to integers.
 
    region_pop = {}
 
-
+   for line in state_data.split('\n'):
+      cells = line.split(',')
 
    =====
 
@@ -795,6 +799,8 @@ Hint: Use ``int()`` to cast strings to integers.
    Wisconsin,WI,Midwest,5757564
    Wyoming,WY,West,584153"""
 
+   for line in state_data.split('\n'):
+      cells = line.split(',')
 
    =====
 

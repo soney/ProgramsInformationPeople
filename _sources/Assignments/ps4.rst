@@ -197,6 +197,7 @@ Problem Set 4 (due midnight Feb 5)
 		def testOne(self):
 		   self.assertEqual(sorted(vowel_frequencies), sorted({'e': 8, 'i': 11, 'a': 7, 'o': 5, 'u': 3}), "testing whether vowel_frequencies is set correctly")
 		   self.assertEqual(sorted(vowel_frequencies.values()), sorted({'e': 8, 'i': 11, 'a': 7, 'o': 5, 'u': 3}.values()), "testing whether vowel_frequencies is set correctly")
+		   self.assertEqual(common_vowel, 'i', "testing common_vowel")
 
 		def testOneA(self):
 		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")

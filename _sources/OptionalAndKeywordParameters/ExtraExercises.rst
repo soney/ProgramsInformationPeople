@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. Write a function called ``str_mult`` that takes in a required string parameter and an optional integer parameter. The default value for the integer parameter should be 3. The function will return the string multiplied by the integer parameter. 
+1. Write a function called ``str_mult`` that takes in a required string parameter and an optional integer parameter. The default value for the integer parameter should be 3. The function will return the string multiplied by the integer parameter.
 
 .. activecode:: ee_Opt_Params_01
    :tags: OptionalAndKeywordParameters/OptionalParameters.rst
@@ -85,7 +85,7 @@ Extra Exercises
 
    myTests().main()
 
-2.1 Below is a function, ``sum``, that does not work. Change the function definition so the code works. The function should still have a required parameter, intx, and an optional parameter, intz with a defualt value of 5. 
+2.1 Below is a function, ``sum``, that does not work. Change the function definition so the code works. The function should still have a required parameter, intx, and an optional parameter, intz with a defualt value of 5.
 
 .. activecode:: ee_optparams_021
    :tags: OptionalAndKeywordParameters/OptionalParameters.rst
@@ -105,7 +105,7 @@ Extra Exercises
 
    myTests().main()
 
-2.2 Currently the function is supposed to take 1 required parameter, and 2 optional parameters, however the code doesn't work. Fix the code so that it passes the test. This should only require changing one line of code.   
+2.2 Currently the function is supposed to take 1 required parameter, and 2 optional parameters, however the code doesn't work. Fix the code so that it passes the test. This should only require changing one line of code.
 
 .. activecode:: ee_opt_params_022
    :tags: OptionalAndKeywordParameters/OptionalParameters.rst
@@ -125,11 +125,11 @@ Extra Exercises
 
    myTests().main()
 
-3. Write a function, ``test``, that takes in three parameters: a required integer, an optional boolean whose default value is True, and an optional dictionary whose default value is {2:3, 4:5, 6:8}. If the boolean parameter is True, the function should test to see if the integer is a key in the dictionary. The value of that key should then be returned. If the boolean parameter is False, return the boolean value "False". If the boolean parameter is False, the function should return "None".
+3. Write a function, ``test``, that takes in three parameters: a required integer, an optional boolean whose default value is True, and an optional dictionary whose default value is {2:3, 4:5, 6:8}. If the boolean parameter is True, the function should test to see if the integer is a key in the dictionary. The value of that key should then be returned. If the boolean parameter is False, return the boolean value "False".
 
 .. activecode:: ee_Opt_Params_03
    :tags: OptionalAndKeywordParameters/OptionalParameters.rst
-      
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -143,7 +143,7 @@ Extra Exercises
 
    myTests().main()
 
-3.1 Define a function called ``nums`` that has three parameters. The first parameter, an integer, should be required. A second parameter named ``mult_int`` should be optional with a default value of 5. The final parameter, ``switch``, should also be optional with a default value of False. The function should multiply the two integers together, and if switch is True, should change the sign of the product before returning it. 
+3.1 Define a function called ``nums`` that has three parameters. The first parameter, an integer, should be required. A second parameter named ``mult_int`` should be optional with a default value of 5. The final parameter, ``switch``, should also be optional with a default value of False. The function should multiply the two integers together, and if switch is True, should change the sign of the product before returning it.
 
 .. activecode:: ee_optparams_031
    :tags: OptionalAndKeywordParameters/KeywordParameters.rst
@@ -163,9 +163,9 @@ Extra Exercises
          self.assertEqual(nums(4, mult_int = 3, switch = True), -12, "Testing the function nums on inputs 4, mult_int = 3, switch = True.")
          self.assertEqual(nums(0, switch = True), 0, "Testing the function nums on inputs 0, switch = True.")
 
-   myTests().main()  
+   myTests().main()
 
-3.2 Write a function called ``checkingIfIn`` that takes three parameters. The first is a required parameter, which should be a string. The second is an optional parameter called ``direction`` with a default value of ``True``. The third is an optional parameter called ``d`` that has a default value of ``{'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}``. Write the function ``checkingIfIn`` so that when the second parameter is ``True``, it checks to see if the first parameter is a key in the third parameter; if it is, return ``True``, otherwise return ``False``. 
+3.2 Write a function called ``checkingIfIn`` that takes three parameters. The first is a required parameter, which should be a string. The second is an optional parameter called ``direction`` with a default value of ``True``. The third is an optional parameter called ``d`` that has a default value of ``{'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}``. Write the function ``checkingIfIn`` so that when the second parameter is ``True``, it checks to see if the first parameter is a key in the third parameter; if it is, return ``True``, otherwise return ``False``.
 
 But if the second paramter is ``False``, then the function should check to see if the first parameter is *not* a key of the third. If it's *not*, the function should return ``True`` in this case, and if it is, it should return ``False``.
 
@@ -207,9 +207,9 @@ But if the second paramter is ``False``, then the function should check to see i
          self.assertEqual(together(3, 'dogs', ': '), '3: dogs', "Testing that together returns the correct string on input (3, 'dogs', ': ')")
          self.assertEqual(together(493.3, 'beans', ' lima '), '493.3 lima beans', "Testing that together returns the correct string on input (493.3, 'beans', 'lima')")
 
-   myTests().main()   
+   myTests().main()
 
-5. We have provided the function ``checkingIfIn`` such that if the first input parameter is in the third, dictionary, input parameter, then the function returns that value, and otherwise, it returns ``False``. Follow the instructions in the active code window for specific variable assignmemts. 
+5. We have provided the function ``checkingIfIn`` such that if the first input parameter is in the third, dictionary, input parameter, then the function returns that value, and otherwise, it returns ``False``. Follow the instructions in the active code window for specific variable assignmemts.
 
 .. activecode:: ee_opt_params_052
    :tags: OptionalAndKeywordParameters/KeywordParameters.rst, OptionalAndKeywordParameters/OptionalParameters.rst
@@ -248,7 +248,7 @@ But if the second paramter is ``False``, then the function should check to see i
          self.assertEqual(fruit_ans, 19, "Testing that fruit_ans has the correct value")
       def testFour(self):
          self.assertEqual(param_check, 8, "Testing that param_check has the correct value")
-         
+
 
    myTests().main()
 

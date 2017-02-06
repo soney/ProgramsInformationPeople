@@ -16,7 +16,7 @@ Problem Set 5 (due midnight Feb 12)
     :name: PS5
     :assignment_type: problem_set
     :questions: ps_5_1 5, ps_5_2 5, ps_5_3 5, ps_5_4 5, ps_5_5 5, ps_5_6 5, ps_5_7 5, ps_5_8 5, ps_5_9 5, ps_5_10 5
-    :deadline: 2017-02-13 04:00
+    :deadline: 2017-02-13 05:00
     :points: 50
     :autograde: unittest
 

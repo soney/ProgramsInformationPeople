@@ -16,7 +16,7 @@ Problem Set 3 (due midnight Jan 29)
   :name: PS3
   :assignment_type: problem_set
   :questions: ps_3_1 5, ps_3_2 8, ps_3_3 5, ps_3_4 8, ps_3_5 8, ps_3_6 8, ps_3_7 8
-  :deadline: 2017-01-30 04:00
+  :deadline: 2017-01-30 05:00
   :points: 50
   :autograde: unittest
 

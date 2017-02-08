@@ -568,6 +568,14 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
+Discussion Section Exercises
+::::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   InClass/AdvancedFunctions.rst
+
 Indices and tables
 ::::::::::::::::::
 

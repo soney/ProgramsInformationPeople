@@ -132,7 +132,6 @@ Advanced Functions Discussion Section
 
     Define a function ``apply`` that accepts two arguments. The first argument is an integer and the second argument is a function. When called, ``apply`` should return the value of that function applied to that integer.
     ~~~~
-
     def apply(inp, func):
         pass
 
@@ -164,12 +163,12 @@ Advanced Functions Discussion Section
     **Bonus**:
     Add the median to your code from above:
 
-    - the median (the “middle” value)
+    - the median (the “middle” value of a sorted list)
         - if there’s an even number of items, average the middle two
         - if there’s an odd number of items, the one in the middle
+
+    You can sort the list ``L`` by calling ``sorted(L)``
     ~~~~
-    def apply(inp, func):
-        pass
 
     =====
 

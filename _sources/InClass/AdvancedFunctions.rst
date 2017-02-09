@@ -6,7 +6,7 @@ Advanced Functions Discussion Section
     :autograde: unittest
     :hidecode:
 
-    Define a function called ``double`` that accepts a list and returns a list where every item is.
+    Define a function called ``double`` that accepts a list and returns a list where every item is doubled.
     ~~~~
     def double(L):
         pass
@@ -121,7 +121,7 @@ Advanced Functions Discussion Section
 
         def testOne(self):
             self.assertEqual(myLamdaFunc(2,3), myFunc(2,3))
-			self.assertIn('lambda', self.getEditorText(), "Testing that you're using a lamda function")
+            self.assertIn('lambda', self.getEditorText(), "Testing that you're using a lamda function")
 
     myTests().main()
 
@@ -153,7 +153,7 @@ Advanced Functions Discussion Section
     :autograde: unittest
     :hidecode:
 
-    Define a function ``mean_mode`` that returns a three-item tuple for any list of integers:
+    Define a function ``mean_mode`` that returns a two-item tuple for any list of integers:
 
     - the mean (arithmetic average) as a float
     - the mode (the most common value)

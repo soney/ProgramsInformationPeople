@@ -120,7 +120,7 @@ Advanced Functions Discussion Section
     class myTests(TestCaseGui):
 
         def testOne(self):
-            self.assertEqual(myLamdaFunc(2,3), myFunc(2,3))
+            self.assertEqual(myLambdaFunc(2,3), myFunc(2,3))
             self.assertIn('lambda', self.getEditorText(), "Testing that you're using a lamda function")
 
     myTests().main()

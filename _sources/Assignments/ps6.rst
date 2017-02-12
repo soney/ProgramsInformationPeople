@@ -218,13 +218,11 @@ Note: This will be the last problem you submit through the textbook! From now on
     :autograde: unittest
     :hidecode:
 
-    **9.** Define a function ``nthMostCommon`` that accepts a string and an integer ``n`` and returns the "nth" most common word. For example, to find the most common word, ``n==1``. To find the second most common word, ``n==2``. If ``n`` is greater than the number of unique words, your function should return ``False``.
-
-    **Hint:** You *don't* want to use max value accumulation here. You *do* want to use sorting.
+    **9.** Define a function ``onlyEvenWords`` that accepts a string and **uses list comprehension**, the ``filter`` function, and ``join`` to return a new string that only contains words where the length of the word is even. The body of ``onlyEvenWords`` should only be 3 lines or fewer.
 
 
     ~~~~
-    # your definition of nthMostCommon
+    # your definition of onlyEvenWords
 
 
     =====

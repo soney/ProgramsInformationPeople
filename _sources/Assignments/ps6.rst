@@ -70,9 +70,11 @@ Note: This will be the last problem you submit through the textbook! From now on
     :autograde: unittest
     :hidecode:
 
-    **3.** Define a function ``trimWords`` that accepts one required argument, ``s`` and two optional integer arguments: ``fromStart`` (default: ``1``) and ``fromEnd`` (default: ``1``). ``trimWords`` should return a new string where *every word* of ``s`` removes ``fromStart`` characters from the start of the word and ``fromEnd`` characters from the end of the word.
+    **3.** Define a function ``trimWords`` that accepts one required argument, ``s`` and two optional integer arguments: ``fromStart`` (default: ``1``) and ``fromEnd`` (default: ``1``). ``trimWords`` should return a new string where *every word* of ``s`` removes ``fromStart`` characters from the start of the word and ``fromEnd`` characters from the end of the word. Note that words whose length is *less than or equal to* ``fromStart+fromEnd`` should be filtered out.
 
     For example: ``trimWords('this is a sentence', fromStart=1, fromEnd=1)`` should yield ``'hi entenc'``
+
+    Hint: Using ``.join(' ')`` and a list comprehension, the body of ``trimWords`` could be just one line
 
 
     ~~~~
@@ -84,8 +86,10 @@ Note: This will be the last problem you submit through the textbook! From now on
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(sorted_sugar,[{'carbohydrate': 93, 'fiber': 47, 'sugar_grams': 6}, {'carbohydrate': 74, 'fiber': 26, 'sugar_grams': 52}, {'carbohydrate': 83, 'fiber': 67, 'sugar_grams': 245}])
-            self.assertEqual(raw_carb_sort,[{'carbohydrate': 83, 'fiber': 67, 'sugar_grams': 245}, {'carbohydrate': 93, 'fiber': 47, 'sugar_grams': 6}, {'carbohydrate': 74, 'fiber': 26, 'sugar_grams': 52}])
+            self.assertEqual(trimWords('hello my world'), 'ell orl')
+            self.assertEqual(trimWords('this is a sentence', fromStart=0, fromEnd=1), 'thi i sentenc')
+            self.assertEqual(trimWords('', fromStart=10, fromEnd=10), '')
+            self.assertEqual(trimWords('this is a sentence', fromStart=3, fromEnd=2), 'ten')
     myTests().main()
 
 .. activecode:: ps_6_4
@@ -93,16 +97,22 @@ Note: This will be the last problem you submit through the textbook! From now on
     :autograde: unittest
     :hidecode:
 
-    **4.** Write a function ``best_ten_words`` that accepts a string and returns a list of the 10 highest-scoring words in a given sentence. You may assume there are no bonuses that double or triple letter values or entire words. The dictionary saved in ``letter_values`` contains the Scrabble score information: its keys are letters, and its values are the scores associated with those letters.
+    **4.** Write a function ``best_three_words`` that accepts a string and returns a list of the 3 highest-scoring words in a given sentence. You may assume there are no bonuses that double or triple letter values or entire words. The dictionary saved in ``letter_values`` in the body of ``computeScrabbleScore`` contains the Scrabble score information: its keys are letters, and its values are the scores associated with those letters.
 
     If you have never played Scrabble before, `here is an explanation <https://en.wikipedia.org/wiki/Scrabble>`_ of what it is. (You do not need that information to solve this problem. All you need to know is that each letter is associated with a number of points, and you want to find the ten words that are associated with the largest point totals.)
 
     HINT: In the textbook section on Accumulating Results from a Dictionary, there is code that computes the scrabble score for the entire text of “A Study in Scarlet”. You may want to adapt that.
 
 
-
     ~~~~
-    letter_values = {'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f':4, 'g': 2, 'h':4, 'i':1, 'j':8, 'k':5, 'l':1, 'm':3, 'n':1, 'o':1, 'p':3, 'q':10, 'r':1, 's':1, 't':1, 'u':1, 'v':8, 'w':4, 'x':8, 'y':4, 'z':10}
+
+    def computeScrabbleScore(word):
+        # fill this in
+        letter_values = {'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f':4, 'g': 2, 'h':4, 'i':1, 'j':8, 'k':5, 'l':1, 'm':3, 'n':1, 'o':1, 'p':3, 'q':10, 'r':1, 's':1, 't':1, 'u':1, 'v':8, 'w':4, 'x':8, 'y':4, 'z':10}
+
+    def best_three_words(s):
+        # return the three best words in s (by scrabble score)
+        pass
 
 
     =====
@@ -111,7 +121,6 @@ Note: This will be the last problem you submit through the textbook! From now on
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(sorted_sugar,[{'carbohydrate': 93, 'fiber': 47, 'sugar_grams': 6}, {'carbohydrate': 74, 'fiber': 26, 'sugar_grams': 52}, {'carbohydrate': 83, 'fiber': 67, 'sugar_grams': 245}])
             self.assertEqual(raw_carb_sort,[{'carbohydrate': 83, 'fiber': 67, 'sugar_grams': 245}, {'carbohydrate': 93, 'fiber': 47, 'sugar_grams': 6}, {'carbohydrate': 74, 'fiber': 26, 'sugar_grams': 52}])
     myTests().main()
 
@@ -265,8 +274,8 @@ _____________
 Install `Git Bash <https://git-for-windows.github.io>`_
 (download Git-2XX.exe: try 64 bit if your machine supports it)
 
-Python Installation
-===================
+Python Installation:
+____________________
 
 We use Python 2 in this class.
 

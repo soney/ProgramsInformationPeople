@@ -576,6 +576,7 @@ Discussion Section Exercises
    :maxdepth: 2
 
    InClass/AdvancedFunctions.rst
+   InClass/AdvancedSequences.rst
 
 Indices and tables
 ::::::::::::::::::

@@ -74,7 +74,7 @@ Note: This will be the last problem you submit through the textbook! From now on
 
     For example: ``trimWords('this is a sentence', fromStart=1, fromEnd=1)`` should yield ``'hi entenc'``
 
-    Hint: Using ``.join(' ')`` and a list comprehension, the body of ``trimWords`` could be just one line
+    Hint: Using ``' '.join()`` and a list comprehension, the body of ``trimWords`` could be just one line
 
 
     ~~~~
@@ -121,7 +121,7 @@ Note: This will be the last problem you submit through the textbook! From now on
     class myTests(TestCaseGui):
         def testOne(self):
             self.assertEqual(best_three_words('working with scrabble scores is fun'), ​['working', 'scrabble', 'with'])
-            self.assertEqual(best_three_words('not enough', ['enough', 'not']))
+            self.assertEqual(best_three_words('not enough'), ['enough', 'not'])
             self.assertEqual(best_three_words('zebras are so cool', ['zebras', 'cool', 'are']))
     myTests().main()
 
@@ -298,5 +298,5 @@ If you don’t have Python 2
 --------------------------
 Install it from the `official Python distribution site <https://www.python.org>`_
 
-**Yes, uploading this screenshot is a required part of this problem set. The version must by Python 2.x**
+**Yes, uploading this screenshot is a required part of this problem set. The version must be Python 2.x**
 You should not need to download any special screen capturing software to take a screenshot.

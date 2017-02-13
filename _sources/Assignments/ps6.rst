@@ -129,7 +129,7 @@ Note: This will be the last problem you submit through the textbook! From now on
     :autograde: unittest
     :hidecode:
 
-    **5.** We have provided a nested list in the variable ``nl``. Write code to accumulate a list containing the second (as humans count) element of each sub-list and save it in a variable ``second_elems``.
+    **5.** We have provided a nested list in the variable ``nl``. Use a list comprehension to accumulate a list containing the second (as humans count) element of each sub-list and save it in a variable ``second_elems``.
 
     ~~~~
     nl = [["nested","data","is"],["really","fun"],[11,["hooray","hooray"],"yay"]]
@@ -141,12 +141,7 @@ Note: This will be the last problem you submit through the textbook! From now on
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(best_z_words[:3],['zyzzyvas', 'zyzzyva', 'pizazzy'],"best_z_words does not have the correct value -- check out how you're sorting them")
-            self.assertEqual("jazzlike" in best_z_words[3:],True,"missing something from your best_z_words")
-            self.assertEqual("pizazzes" in best_z_words[3:],True,"missing something from your best_z_words")
-            self.assertEqual("pazazzes" in best_z_words[3:],True,"missing something from your best_z_words")
-            self.assertEqual("jazzlike" in best_z_words[3:],True,"missing something from your best_z_words")
-            self.assertEqual("quizzing" in best_z_words[6:], True, "missing something from your best_z_words")
+            self.assertEqual(second_elems, ['data', 'fun', ['hooray', 'hooray']], "second_elems does not have the correct value")
     myTests().main()
 
 .. activecode:: ps_6_6
@@ -201,13 +196,16 @@ Note: This will be the last problem you submit through the textbook! From now on
     :autograde: unittest
     :hidecode:
 
-    **8.** Define a function ``nthMostCommon`` that accepts a string and an integer ``n`` and returns the "nth" most common word. For example, to find the most common word, ``n==1``. To find the second most common word, ``n==2``. If ``n`` is greater than the number of unique words, your function should return ``False``.
+    **8.** Define a function ``nthMostCommon`` that accepts a string ``s`` and an integer ``n`` and returns the "nth" most common word. For example, to find the most common word, ``n==1``. To find the second most common word, ``n==2``. If ``n`` is greater than the number of unique words, your function should return ``False``.
 
     **Hint:** You *don't* want to use max value accumulation here. You *do* want to use sorting.
+    **Note:** Remember that sequences in Python are 0-indexed, but this problem is "1-indexed"
 
 
     ~~~~
-    # your definition of nthMostCommon
+    def nthMostCommon(s, n):
+        # your definition of nthMostCommon
+        pass
 
 
     =====
@@ -216,10 +214,10 @@ Note: This will be the last problem you submit through the textbook! From now on
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(sort_nested_lists([[2,3],[45,100,2],[536],[103,2,8]]),[[2,3],[103,2,8],[45,100,2],[536]],"testing a case of a sorted nested list -- check out your function output")
-            self.assertEqual(sort_nested_lists([[1],[50],[6]]),[[1],[6],[50]],"testing a case of a sorted nested list -- check out your function output")
-            self.assertEqual(sort_nested_lists([[],[1]]),[[],[1]],"testing a case of a sorted nested list -- check out your function output")
-            self.assertEqual(sort_nested_lists([[0],[-4,-5,-7],[-56,4]]),[[-56,4],[-4,-5,-7],[0]],"testing a case of a sorted nested list -- check out your function output")
+            self.assertEqual(nthMostCommon('peter piper piper', 2), 'peter')
+            self.assertEqual(nthMostCommon('peter piper piper', 1), 'piper')
+            self.assertEqual(nthMostCommon('peter piper piper', 3), False)
+            self.assertEqual(nthMostCommon('A A A B B C', 3), 'C')
     myTests().main()
 
 .. activecode:: ps_6_9
@@ -227,11 +225,13 @@ Note: This will be the last problem you submit through the textbook! From now on
     :autograde: unittest
     :hidecode:
 
-    **9.** Define a function ``onlyEvenWords`` that accepts a string and **uses list comprehension**, the ``filter`` function, and ``join`` to return a new string that only contains words where the length of the word is even. The body of ``onlyEvenWords`` should only be 3 lines or fewer.
+    **9.** Define a function ``onlyEvenWords`` that accepts a string and **uses list comprehension** and ``join`` to return a new string that only contains words where the length of the word is even. The body of ``onlyEvenWords`` should only be 2 lines or fewer.
 
 
     ~~~~
-    # your definition of onlyEvenWords
+    def onlyEvenWords(s):
+        # your definition of onlyEvenWords
+        pass
 
 
     =====
@@ -240,10 +240,10 @@ Note: This will be the last problem you submit through the textbook! From now on
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(sort_nested_lists([[2,3],[45,100,2],[536],[103,2,8]]),[[2,3],[103,2,8],[45,100,2],[536]],"testing a case of a sorted nested list -- check out your function output")
-            self.assertEqual(sort_nested_lists([[1],[50],[6]]),[[1],[6],[50]],"testing a case of a sorted nested list -- check out your function output")
-            self.assertEqual(sort_nested_lists([[],[1]]),[[],[1]],"testing a case of a sorted nested list -- check out your function output")
-            self.assertEqual(sort_nested_lists([[0],[-4,-5,-7],[-56,4]]),[[-56,4],[-4,-5,-7],[0]],"testing a case of a sorted nested list -- check out your function output")
+            self.assertEqual(onlyEvenWords('this is an example of a sentence'), 'this is an of sentence')
+            self.assertEqual(onlyEvenWords('s by sw'), 'by sw')
+            self.assertEqual(onlyEvenWords('x'), '')
+            self.assertEqual(onlyEvenWords(''), '')
     myTests().main()
 
 .. activecode:: ps_6_10
@@ -274,17 +274,12 @@ _____________
 Install `Git Bash <https://git-for-windows.github.io>`_
 (download Git-2XX.exe: try 64 bit if your machine supports it)
 
-Python Installation:
-____________________
 
+Check if you have Python 2
+-----------------------------
 We use Python 2 in this class.
 
-
-1: Check if you have Python 2
------------------------------
-
 In your terminal, type:
-
 ::
     python -V
 

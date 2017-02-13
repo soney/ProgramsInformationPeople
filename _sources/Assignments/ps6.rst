@@ -105,7 +105,6 @@ Note: This will be the last problem you submit through the textbook! From now on
 
 
     ~~~~
-
     def computeScrabbleScore(word):
         # fill this in
         letter_values = {'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f':4, 'g': 2, 'h':4, 'i':1, 'j':8, 'k':5, 'l':1, 'm':3, 'n':1, 'o':1, 'p':3, 'q':10, 'r':1, 's':1, 't':1, 'u':1, 'v':8, 'w':4, 'x':8, 'y':4, 'z':10}
@@ -124,7 +123,6 @@ Note: This will be the last problem you submit through the textbook! From now on
             self.assertEqual(best_three_words('working with scrabble scores is fun'), ​['working', 'scrabble', 'with'])
             self.assertEqual(best_three_words('not enough', ['enough', 'not']))
             self.assertEqual(best_three_words('zebras are so cool', ['zebras', 'cool', 'are']))
-            
     myTests().main()
 
 .. activecode:: ps_6_5

@@ -39,7 +39,7 @@ Advanced Sequences Discussion Section
     class myTests(TestCaseGui):
 
         def testOne(self):
-            self.assertEqual(topThreeLen(["4", "first", "3r", "2nd"]), ["first","2nd","3r"], "Testing with ["4", "first", "3r", "2nd"]")
+            self.assertEqual(topThreeLen(["4", "first", "3r", "2nd"]), ["first","2nd","3r"], 'Testing with ["4", "first", "3r", "2nd"]')
             self.assertEqual(topThreeLen(["ABC"]), ["ABC"], "Testing with a one-element list")
 
     myTests().main()

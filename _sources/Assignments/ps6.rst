@@ -122,7 +122,7 @@ Note: This will be the last problem you submit through the textbook! From now on
         def testOne(self):
             self.assertEqual(best_three_words('working with scrabble scores is fun'), ​['working', 'scrabble', 'with'])
             self.assertEqual(best_three_words('not enough'), ['enough', 'not'])
-            self.assertEqual(best_three_words('zebras are so cool', ['zebras', 'cool', 'are']))
+            self.assertEqual(best_three_words('zebras are so cool'), ['zebras', 'cool', 'are'])
     myTests().main()
 
 .. activecode:: ps_6_5

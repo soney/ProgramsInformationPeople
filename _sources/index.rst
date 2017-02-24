@@ -32,6 +32,8 @@ Assignments
    Assignments/ps5.rst
    Assignments/ps6.rst
 
+(note that problem set 7 and later are distributed and submitted on Canvas)
+
 General Introduction
 ::::::::::::::::::::
 

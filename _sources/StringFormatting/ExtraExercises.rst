@@ -16,7 +16,7 @@ Extra Exercises
    :tags: StringFormatting/Interpolation.rst
 
    str1 = "I go to {} and I am in {}".format()
-      
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -47,14 +47,14 @@ Extra Exercises
 
    myTests().main()
 
-1.2 Below, we have provided a list of words. Use string formatting to produce the following string: "My favorite animals are elephants, giraffes, and zebras." Save this string to the variable name ``animal_string``. 
+1.2 Below, we have provided a list of words. Use string formatting to produce the following string: "My favorite animals are elephants, giraffes, and zebras." Save this string to the variable name ``animal_string``.
 
 .. activecode:: ee_interpolation_012
    :tags: StringFormatting/Interpolation.rst
 
    animals = ['elephants', 'giraffes', 'zebras']
 
-   animal_string = 
+   animal_string =
 
    =====
 
@@ -67,7 +67,7 @@ Extra Exercises
 
    myTests().main()
 
-2. Use string formatting to complete the string given. The blanks should correspond to variable ``name`` and ``breed``.  
+2. Use string formatting to complete the string given. The blanks should correspond to variable ``name`` and ``breed``.
 
 .. activecode:: ee_interpolation_02
    :tags: StringFormatting/Interpolation.rst
@@ -75,7 +75,7 @@ Extra Exercises
    name = "Oreo"
    breed = "poodle"
    str1 = "This is {}, he is a {}."
-      
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -106,7 +106,7 @@ Extra Exercises
 
    myTests().main()
 
-2.2 Below, we have created the variables ``course`` and ``school``. Use string formatting to produce the following string: "I'm enrolled in SI 106 here at University of Michigan." Save this string to the variable name ``final``. 
+2.2 Below, we have created the variables ``course`` and ``school``. Use string formatting to produce the following string: "I'm enrolled in SI 106 here at University of Michigan." Save this string to the variable name ``final``.
 
 .. activecode:: ee_interpolation_022
    :tags: StringFormatting/Interpolation.rst
@@ -114,7 +114,7 @@ Extra Exercises
    course = "SI 106"
    school = "University of Michigan"
 
-   final = 
+   final =
 
    =====
 
@@ -125,7 +125,7 @@ Extra Exercises
       def testOne(self):
          self.assertEqual(final, "I'm enrolled in SI 106 here at University of Michigan.", "Testing that final is correct.")
 
-   myTests().main() 
+   myTests().main()
 
 
 3. Provided is a list of tuples, the first is a country, the second is their medal count. Create a new list called ``medals`` using these tuples so that if the tuple was ('USA', 121), then what is added to medals is the string "USA won 121 medals". Do so using string interpolation.
@@ -162,10 +162,10 @@ Extra Exercises
 
       def testOne(self):
          self.assertEqual(user_info, ['Sarah is from Mattawan', 'Grace is from Kalamazoo', 'Mariana is from Sao Paulo', 'Kevin is from Melbourne', 'Srishti is from Dubai', 'Kathleen is from Bagota', 'Ann is from Excel'], "Testing that user_info has the correct value.")
-         
+
    myTests().main()
 
-3.2 Below, we have provided a list of tuples that contain information about summer Olympic meets. Create a new list called ``olympics_info`` using these tuples so that if the tuple is ('2016', 'Rio de Janeiro, Brazil'), then what is added to ``olympics_info`` is the string: "The 2016 Olympics were held in Rio de Janeiro, Brazil." Do this by using string interpolation. 
+3.2 Below, we have provided a list of tuples that contain information about summer Olympic meets. Create a new list called ``olympics_info`` using these tuples so that if the tuple is ('2016', 'Rio de Janeiro, Brazil'), then what is added to ``olympics_info`` is the string: "The 2016 Olympics were held in Rio de Janeiro, Brazil." Do this by using string interpolation.
 
 .. activecode:: ee_interpolation_032
    :tags: StringFormatting/Interpolation.rst
@@ -181,13 +181,13 @@ Extra Exercises
       def testOne(self):
          self.assertEqual(olympics_info, ['The 2016 Olympics were held in Rio de Janeiro, Brazil.', 'The 2012 Olympics were held in London, Great Britain.', 'The 2008 Olympics were held in Beijing, China.', 'The 2004 Olympics were held in Athens, Greece.', 'The 2000 Olympics were held in Sydney, Australia.', 'The 1996 Olympics were held in Atlanta, Georgia, USA.', 'The 1992 Olympics were held in Barcelona, Spain.', 'The 1988 Olympics were held in Seoul, Korea.'], "Testing that olympics_info is correct.")
 
-   myTests().main()  
+   myTests().main()
 
 4. Write a function called ``pokemon`` that takes in a list of an integer and string. The integer is the level of the trainer and the string is where the trainer plays. If the player is level five or below, they have the most rattatas. If they are between level 6 and 10, they have the most zubats. If they are higher than level 10, they have the most eevees. Return the string "I'm level __ and I caught a bunch of __ in the __!" where the first blank is the player level, the second is the pokemon, and the third is the location where they play. For instance, if the inputted list is [2, "city"], the returned string should be "I'm level 2 and I caught a bunch of rattatas in the city!" Do this using string interpolation.
 
 .. activecode:: ee_interpolation_04
    :tags: StringFormatting/Interpolation.rst
-      
+
 
    =====
 
@@ -217,7 +217,7 @@ Extra Exercises
          self.assertEqual(data_mine(('Iron Mountain', 'snow')), "In Iron Mountain there is snow so it is cold.", "Testing that data_mine has the correct return value with input ('Iron Mountain', 'snow').")
          self.assertEqual(data_mine(('Santa Clara', 'sun')), 'In Santa Clara there is sun so there are blue skies.', "Testing that data_mine has the correct return value with input ('Santa Clara', 'sun')")
          self.assertEqual(data_mine(('Seattle', 'rain')), "In Seattle there is rain so it is cloudy.", "Testing that data_mine has the correct return value with input ('Seattle', 'rain')")
-         
+
    myTests().main()
 
 4.2 Write a function called ``grades`` that takes in a list with two elements, the first being a string (a person's name) and the second being an integer (their grade on a test). If the grade is greater than or equal to 70, the function should return: "Congrats, [name], you passed the test with a [grade]!" If the grade is lower than 70, the function should return: "Sorry, [name], you failed the test with a [grade]."
@@ -236,9 +236,9 @@ Extra Exercises
          self.assertEqual(grades(["Tina", 70]), "Congrats, Tina, you passed the test with a 70!", "Testing the function grades on input ['Tina', 70].")
          self.assertEqual(grades(["Betty", 45]), "Sorry, Betty, you failed the test with a 45.", "Testing the function grades on input ['Betty', 45].")
 
-   myTests().main()  
+   myTests().main()
 
-5. The list of tuples, ``order``, contains information about pizza orders. It contains information on whether or not the order is a pickup or delivery, how many pizzas were ordered, the kind of pizzas, and in how many minutes they need to be ready. Create a list called ``response`` that gives a response to each order. For a delivery, if the order input is ("delivery", 1, "cheese", 10), the response should be "Your 1 cheese pizza will be delivered in 10 minutes". If the order is a pickup, the response should be "Come pick up your 1 cheese pizza in 10 minutes". 
+5. The list of tuples, ``order``, contains information about pizza orders. It contains information on whether or not the order is a pickup or delivery, how many pizzas were ordered, the kind of pizzas, and in how many minutes they need to be ready. Create a list called ``response`` that gives a response to each order. For a delivery, if the order input is ("delivery", 1, "cheese", 10), the response should be "Your 1 cheese pizza will be delivered in 10 minutes". If the order is a pickup, the response should be "Come pick up your 1 cheese pizza in 10 minutes".
 
 .. activecode:: ee_interpolation_05
    :tags: StringFormatting/Interpolation.rst
@@ -252,12 +252,12 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFive(self):
-         self.assertEqual(response, ['Your 3 pepperoni pizzas will be delivered in 20 minutes', 'Come pick up your 4 cheese pizzas in 10 minutes', 'Come pick up your 2 combo pizzas in 5 minutes', 'Your 10 cheese pizzas will be delievered in 15 minutes', 'Your 1 supreme pizzas will be delievered in 60 minutes'], "Testing if response is assigned to correct values")
+         self.assertEqual(response, ['Your 3 pepperoni pizzas will be delivered in 20 minutes', 'Come pick up your 4 cheese pizzas in 10 minutes', 'Come pick up your 2 combo pizzas in 5 minutes', 'Your 10 cheese pizzas will be delivered in 15 minutes', 'Your 1 supreme pizzas will be delivered in 60 minutes'], "Testing if response is assigned to correct values")
 
    myTests().main()
 
 
-5.1 Below, we have provided a list of tuples that contain information about customers' product reviews on Amazon: the product, its rating, and customer name. Write a function called ``feedback`` that takes a tuple as input and returns a message to the customer based on their review. If the customer rated their product as an 8 or higher, ``feedback`` should return the following string: "[name], we're happy to hear that you gave your new [product] a [rating] rating!" If the rating was below 8, ``feedback`` should return: "[name], we're sorry to hear that your new [product] was not excellent." Create a list called ``feedback_messages`` that contains a response to each customer below. 
+5.1 Below, we have provided a list of tuples that contain information about customers' product reviews on Amazon: the product, its rating, and customer name. Write a function called ``feedback`` that takes a tuple as input and returns a message to the customer based on their review. If the customer rated their product as an 8 or higher, ``feedback`` should return the following string: "[name], we're happy to hear that you gave your new [product] a [rating] rating!" If the rating was below 8, ``feedback`` should return: "[name], we're sorry to hear that your new [product] was not excellent." Create a list called ``feedback_messages`` that contains a response to each customer below.
 
 .. activecode:: ee_interpolation_052
    :tags: StringFormatting/Interpolation.rst
@@ -273,5 +273,5 @@ Extra Exercises
       def testOne(self):
          self.assertEqual(feedback_messages, ["Sandy, we're happy to hear that you gave your new Dyson vacuum a 9.1 rating!", "Timmy, we're sorry to hear that your new Keurig was not excellent.", "Sam, we're happy to hear that you gave your new SleepComfort mattress a 8 rating!", "Kate, we're sorry to hear that your new Michael Kors vest was not excellent.", "Charles, we're happy to hear that you gave your new LG Dishwasher a 10 rating!"], "Testing that feedback_messages is correct.")
 
-   myTests().main()   
+   myTests().main()
 

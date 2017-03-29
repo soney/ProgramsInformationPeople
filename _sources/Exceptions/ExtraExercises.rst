@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. The code below takes the list of country, ``country``, and searches to see if it is in the dictionary ``gold`` which shows some countries who won gold during the Olympics. However, this code currently does not work. Correctly add try/except clause in the code so that it will correctly populate the list, ``country_gold``, with either the number of golds won or the string "Did not get gold".
+1. The code below takes the list of country names, ``country``, and searches to see if it is in the dictionary ``gold`` which shows some countries who won gold during the Olympics. However, this code currently does not work. Correctly add try/except clause in the code so that it will correctly populate the list, ``country_gold``, with either the number of golds won or the string "Did not get gold".
 
 .. activecode:: ee_exceptions_01
    :tags: Exceptions/intro-exceptions.rst
@@ -20,8 +20,8 @@ Extra Exercises
    country_gold = []
 
    for x in country:
-        country_gold.append(gold[x])
-        country_gold.append("Did not get gold")
+      country_gold.append(gold[x])
+      country_gold.append("Did not get gold")
 
    =====
 
@@ -31,7 +31,7 @@ Extra Exercises
 
       def testOneA(self):
          self.assertEqual(country_gold, [1, 'Did not get gold', 'Did not get gold', 10, 'Did not get gold', 46], "Testing that country_gold is assigned to correct values")
-      
+
    myTests().main()
 
 1.1 Provided is a buggy for loop that tries to accumulate some values out of some dictionaries. Insert a try/except so that the code passes.
@@ -100,7 +100,7 @@ Extra Exercises
 
       def testOneA(self):
          self.assertEqual(remainder, [0, 'Error', 0, 4, 0, 0, 'Error', 0, 36, 'Error', 36, 'Error', 0, 13], "Testing that remainder is assigned to correct values.")
-     
+
    myTests().main()
 
 2.1 Provided is buggy code, insert a try/except so that the code passes.
@@ -128,7 +128,7 @@ Extra Exercises
 
    myTests().main()
 
-2.2 Below, we have provided code that does not run. Add a try/except clause so the code runs without errors. If an element is not able to undergo the addition operation, the string 'Error' should be appended to plus_four. 
+2.2 Below, we have provided code that does not run. Add a try/except clause so the code runs without errors. If an element is not able to undergo the addition operation, the string 'Error' should be appended to plus_four.
 
 .. activecode:: ee_exceptions_022
    :tags: Exceptions/intro-exceptions.rst
@@ -137,7 +137,7 @@ Extra Exercises
 
    plus_four = []
 
-   for num in nums: 
+   for num in nums:
        plus_four.append(num+4)
 
 
@@ -153,7 +153,7 @@ Extra Exercises
    myTests().main()
 
 
-3. The code below assigns the 5th letter of each word in ``food`` to the new list ``fifth``. However, the code currently produces errors. Insert a try/except clause that will allow the code to run and produce of list of the 5th letter in each word. If the word is not long enough, it should not print anything out. Note: The pass statement is a null operation; nothing will happen when it executes.
+3. The code below assigns the 5th letter of each word in ``food`` to the new list ``fifth``. However, the code currently produces errors. Insert a try/except clause that will allow the code to run and produce of list of the 5th letter in each word. If the word is not long enough, it should not print anything out. Note: The ``continue`` statement works for ``for`` loops.
 
 .. activecode:: ee_exceptions_03
    :tags:Exceptions/intro-exceptions.rst
@@ -162,8 +162,7 @@ Extra Exercises
    fifth = []
 
    for x in food:
-      
-           fifth.append(x[4])
+      fifth.append(x[4])
 
    =====
 
@@ -173,8 +172,8 @@ Extra Exercises
 
       def testOneA(self):
          self.assertEqual(fifth, ['o', 'k', 'w', 't', 'n'], "Testing that fifth is assigned to correct values.")
-     
-      
+
+
    myTests().main()
 
 3.1 Write code so that the buggy code provided works using a try/except. When the codes does not work in the try, have it append to the list ``attempt`` the string "Error"
@@ -209,7 +208,7 @@ Extra Exercises
 
    third_countries = []
 
-   for c in conts: 
+   for c in conts:
        third_countries.append(c[2])
 
 
@@ -222,7 +221,7 @@ Extra Exercises
       def testOne(self):
          self.assertEqual(third_countries, ['Greece', 'Canada', 'Korea', 'Brazil', 'Continent does not have 3 countries', 'Kenya', 'Continent does not have 3 countries'], "Testing that third_countries is created correctly.")
 
-   myTests().main()   
+   myTests().main()
 
 4. The buggy code below prints out the value of the sport in the list ``sport``. Use try/except so that the code will run properly. If the sport is not in the dictionary, ``ppl_play``, add it in with the value of 1.
 
@@ -234,9 +233,8 @@ Extra Exercises
    ppl_play = {"hockey":4, "soccer": 10, "football": 15, "tennis": 8}
 
    for x in sport:
-      
-        print ppl_play[x]
-       
+      print ppl_play[x]
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -245,7 +243,7 @@ Extra Exercises
 
       def testOneA(self):
          self.assertEqual(sorted(ppl_play.items()), [('baseball', 1), ('basketball', 1), ('football', 15), ('hockey', 4), ('soccer', 10), ('tennis', 8)], "Testing that ppl_play is assigned to correct values.")
-     
+
    myTests().main()
 
 
@@ -286,7 +284,7 @@ Extra Exercises
 
    total_likes = 0
 
-   for post in blog_posts: 
+   for post in blog_posts:
        total_likes = total_likes + post['Likes']
 
    =====
@@ -299,12 +297,12 @@ Extra Exercises
          self.assertEqual(total_likes, 86, "Testing that total_likes has the correct value.")
       def testB(self):
          accum = 0
-         for d in blog_posts: 
+         for d in blog_posts:
             if 'Likes' in d:
                accum +=1
-         self.assertEqual(accum, 6, "Testing that blog_post dictionaries all have a 'Likes' key.")   
+         self.assertEqual(accum, 6, "Testing that blog_post dictionaries all have a 'Likes' key.")
 
-   myTests().main()  
+   myTests().main()
 
 
 

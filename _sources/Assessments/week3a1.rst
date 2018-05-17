@@ -71,7 +71,7 @@ Week 3 Assessment 1
    m = c*5
    print(m)
 
-.. activecode:: a_03_01
+.. activecode:: a_03_01_01
     :language: python
     :topics: Sequences/ListSlices
 
@@ -92,7 +92,7 @@ Week 3 Assessment 1
 
     myTests().main()
 
-.. activecode:: a_03_02
+.. activecode:: a_03_01_02
     :language: python
     :topics: 
 

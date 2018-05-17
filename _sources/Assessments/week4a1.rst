@@ -8,7 +8,7 @@
     License".
 
 Week 4 Assignment
--------------------
+-----------------
 
 **Check your understanding**
 

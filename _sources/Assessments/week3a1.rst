@@ -13,19 +13,30 @@ Week 3 Assessment 1
 **Check your understanding**
 
 .. mchoice:: question3_1_1_1
-   :answer_a: 
-   :answer_b: 
-   :answer_c: 
-   :answer_d: 
-   :feedback_a: 
-   :feedback_b: 
-   :feedback_c: 
-   :feedback_d: 
-   :correct: 
+   :answer_a: I.
+   :answer_b: II.
+   :answer_c: Neither is the correct reference diagram.
+   :feedback_a: Yes, when we are using the remove method, we are just editing the existing list, not making a new copy.
+   :feedback_b: When we use the remove method, we just edit the existing list, not make a new copy that does not include the removed object.
+   :feedback_c: One of the diagrams is correct - look again at what is happening to lst.
+   :correct: a
    :practice: T
    :topics: 
 
-   Which of these is a correct reference diagram following an execution?
+   Which of these is a correct reference diagram following the execution of the following code?
+
+   .. sourcecode:: python
+   lst = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto']
+   lst.remove('pluto')
+   first_three = lst[:2]
+
+   I.
+   .. image:: Figures/week3a1_1.png
+   :alt: First Potential Solution
+   II.
+   .. image:: Figures/week3a1_2.png
+   :alt: Second Potential Solution
+
 
 .. mchoice:: question3_1_1_2
    :answer_a: ['travel', 'lights', 'moon']

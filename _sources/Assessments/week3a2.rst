@@ -93,19 +93,39 @@ Week 3 Assessment 2
 
 
 .. mchoice:: question3_2_1_4
-   :answer_a: 
-   :answer_b: 
-   :answer_c: 
-   :answer_d: 
-   :feedback_a: 
-   :feedback_b: 
-   :feedback_c: 
-   :feedback_d: 
-   :correct: 
+   :answer_a: I.
+   :answer_b: II.
+   :answer_c: III.
+   :answer_d: IV.
+   :feedback_a: Yes, when we make our own diagrams we want to keep the old information because sometimes other variables depend on them. It can get cluttered though if there is a lot of information.
+   :feedback_b: Not quite, we want to keep track of old information because sometimes other variables depend on them. 
+   :feedback_c: Look again at what is happening when join is executed.
+   :feedback_d: What happens to the spaces in a string when it is split by whitespace?
+   :correct: a
    :practice: T
    :topics: 
 
-   Which of these is a correct reference diagram following an execution?
+   Which of these is a correct reference diagram following the execution of the following code?
+   .. sourcecode:: python
+
+   sent = "The mall has excellent sales right now."
+   wrds = sent.split()
+   wrds[1] = 'store'
+   new_sent = " ".join(wrds)
+
+   I.
+   .. image:: Figures/week3a2_1.png
+   :alt: First Potential Solution
+   II.
+   .. image:: Figures/week3a2_2.png
+   :alt: Second Potential Solution
+   III.
+   .. image:: Figures/week3a2_3.png
+   :alt: Third Potential Solution
+   IV.
+   .. image:: Figures/week3a2_4.png
+   :alt: Fourth Potential Solution
+
 
 .. mchoice:: question3_2_1_2
    :answer_a: .pop()

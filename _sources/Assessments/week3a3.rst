@@ -49,18 +49,38 @@ Week 3 Assessment 3
        print(item)
 
 
+.. not happy with this one yet, want something less complicated, too.
+
  .. mchoice:: question3_1_1_1
-   :answer_a: 
-   :answer_b: 
-   :answer_c: 
-   :answer_d: 
-   :feedback_a: 
-   :feedback_b: 
-   :feedback_c: 
-   :feedback_d: 
-   :correct: 
+   :answer_a: I.
+   :answer_b: II.
+   :answer_c: III.
+   :answer_d: IV.
+   :feedback_a: When an object is concatinated with another using +=, a new copy is made. If this is done in the longer form (item = item + object) then it edits the original object.
+   :feedback_b: When an object is concatinated with another using +=, a new copy is made. If this is done in the longer form (item = item + object) then it edits the original object.
+   :feedback_c: When an object is concatinated with another using +=, a new copy is made. If this is done in the longer form (item = item + object) then it edits the original object.
+   :feedback_d: Yes, the behavior of item = item + object_two is different than item += object_two where the first version makes a new object entirely and the second version changes the original object so that object_two is added to the first.
+   :correct: d
    :practice: T
    :topics: 
 
-   Which of these is a correct reference diagram following an execution?
+   Which of these is a correct reference diagram following the execution of the following code?
+   .. sourcecode:: python
 
+   x = ["dogs", "cats", "birds", "reptiles"]
+   y = x
+   x += ['fish', 'horses']
+   y = y + ['sheep']
+
+   I.
+   .. image:: Figures/week3a3_1.png
+   :alt: First Potential Solution
+   II.
+   .. image:: Figures/week3a3_2.png
+   :alt: Second Potential Solution
+   III.
+   .. image:: Figures/week3a3_3.png
+   :alt: Third Potential Solution
+   IV.
+   .. image:: Figures/week3a3_4.png
+   :alt: Fourth Potential Solution

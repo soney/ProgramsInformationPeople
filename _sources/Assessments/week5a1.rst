@@ -17,10 +17,10 @@ Week 5 Assessment 1
    :answer_b: x
    :answer_c: z
    :answer_d: c
-   :feedback_a: this is the variable with our string, but it does not accumulate anything.
-   :feedback_b: this is the iterator variable. It changes each time but does not accumulate.
-   :feedback_c: this is a variable inside the for loop. It changes each time but does not accumulate or retain the old expressions that were assigned to it.
-   :feedback_d: yes, this is the accumulator variable. By the end of the program, it will have a full count of how many items are in byzo.
+   :feedback_a: This is the variable with our string, but it does not accumulate anything.
+   :feedback_b: This is the iterator variable. It changes each time but does not accumulate.
+   :feedback_c: This is a variable inside the for loop. It changes each time but does not accumulate or retain the old expressions that were assigned to it.
+   :feedback_d: Yes, this is the accumulator variable. By the end of the program, it will have a full count of how many items are in byzo.
    :correct: d
    :practice: T
    :topics: 
@@ -39,9 +39,9 @@ Week 5 Assessment 1
    :answer_a: cawdra
    :answer_b: elem
    :answer_c: t
-   :feedback_a: yes, this is the sequence that we iterate over.
-   :feedback_b: this is the iterator variable. It changes each time but is not the whole sequence itself.
-   :feedback_c: this is the accumulator variable. By the end of the program, it will have a full count of how many characters are in the items are in cawdra.
+   :feedback_a: Yes, this is the sequence that we iterate over.
+   :feedback_b: This is the iterator variable. It changes each time but is not the whole sequence itself.
+   :feedback_c: This is the accumulator variable. By the end of the program, it will have a full count of how many characters are in the items are in cawdra.
    :correct: a
    :practice: T
    :topics: 
@@ -58,9 +58,9 @@ Week 5 Assessment 1
    :answer_a: item
    :answer_b: lst
    :answer_c: num
-   :feedback_a: yes, this is the iterator variable. It changes each time but is not the whole sequence itself.
-   :feedback_b: this is the sequence that we iterate over.
-   :feedback_c: this is the accumulator variable. By the end of the program, it will have the total value of the integers that are in lst.
+   :feedback_a: Yes, this is the iterator variable. It changes each time but is not the whole sequence itself.
+   :feedback_b: This is the sequence that we iterate over.
+   :feedback_c: This is the accumulator variable. By the end of the program, it will have the total value of the integers that are in lst.
    :correct: a
    :practice: T
    :topics: 

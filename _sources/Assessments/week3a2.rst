@@ -17,10 +17,10 @@ Week 3 Assessment 2
    :answer_b: integer
    :answer_c: float
    :answer_d: list
-   :feedback_a: not quite, is it slicing or accessing an element?
-   :feedback_b: what is happening in the assigment statement for ``m``?
-   :feedback_c: what is happening in the assigment statement for ``m``?
-   :feedback_d: correct, a slice returns a list no matter how large the slice.
+   :feedback_a: Not quite, is it slicing or accessing an element?
+   :feedback_b: What is happening in the assigment statement for ``m``?
+   :feedback_c: What is happening in the assigment statement for ``m``?
+   :feedback_d: Yes, a slice returns a list no matter how large the slice.
    :correct: d
    :practice: T
    :topics: 
@@ -36,10 +36,10 @@ Week 3 Assessment 2
    :answer_b: integer
    :answer_c: float
    :answer_d: list
-   :feedback_a: yes, the quotes around the number mean that this is a string.
-   :feedback_b: not quite, look again at what is being extracted.
-   :feedback_c: not quite, look again at what is being extracted.
-   :feedback_d: not quite, is it slicing or accessing an element?
+   :feedback_a: Yes, the quotes around the number mean that this is a string.
+   :feedback_b: Not quite, look again at what is being extracted.
+   :feedback_c: Not quite, look again at what is being extracted.
+   :feedback_d: Not quite, is it slicing or accessing an element?
    :correct: a
    :practice: T
    :topics: 
@@ -55,10 +55,10 @@ Week 3 Assessment 2
    :answer_b: integer
    :answer_c: float
    :answer_d: list
-   :feedback_a: not quite, think about what the result of .split() is.
-   :feedback_b: not quite, look again at what types are present and what the result of .split() is.
-   :feedback_c: not quite, look again at what types are present and what the result of .split() is.
-   :feedback_d: yes, the .split() method returns a list.
+   :feedback_a: Not quite, think about what the result of .split() is.
+   :feedback_b: Not quite, look again at what types are present and what the result of .split() is.
+   :feedback_c: Not quite, look again at what types are present and what the result of .split() is.
+   :feedback_d: Yes, the .split() method returns a list.
    :correct: d
    :practice: T
    :topics: 
@@ -74,10 +74,10 @@ Week 3 Assessment 2
    :answer_b: integer
    :answer_c: float
    :answer_d: list
-   :feedback_a: yes, the string is split into a list, then joined back into a string, then split again, and finally joined back into a string.
-   :feedback_b: not quite, look again at what types are present and what the result of .split() is.
-   :feedback_c: not quite, look again at what types are present and what the result of .split() is.
-   :feedback_d: not quite, think about what .split() and .join() return.
+   :feedback_a: Yes, the string is split into a list, then joined back into a string, then split again, and finally joined back into a string.
+   :feedback_b: Not quite, look again at what types are present and what the result of .split() is.
+   :feedback_c: Not quite, look again at what types are present and what the result of .split() is.
+   :feedback_d: Not quite, think about what .split() and .join() return.
    :correct: a
    :practice: T
    :topics: 
@@ -115,7 +115,7 @@ Week 3 Assessment 2
    :feedback_a: pop removes and returns items (default is to remove and return the last item in the list) 
    :feedback_b: insert will add an item at whatever position is specified.
    :feedback_c: count returns the number of times something occurs in a list
-   :feedback_d: yes, index will return the position of the first occurance of an item.
+   :feedback_d: Yes, index will return the position of the first occurance of an item.
    :correct: d
    :practice: T
    :topics: 
@@ -127,9 +127,9 @@ Week 3 Assessment 2
    :answer_b: .pop()
    :answer_c: .append()
    :answer_d: .remove()
-   :feedback_a: while you can use insert, it is not the best method to use because you need to specify that you want to stick the new item at the end.
+   :feedback_a: While you can use insert, it is not the best method to use because you need to specify that you want to stick the new item at the end.
    :feedback_b: pop removes an item from a list
-   :feedback_c: yes, though you can use insert to do the same thing, you don't need to provide the position.
+   :feedback_c: Yes, though you can use insert to do the same thing, you don't need to provide the position.
    :feedback_d: remove gets rid of the first occurance of any item that it is told, not add.
    :correct: c
    :practice: T

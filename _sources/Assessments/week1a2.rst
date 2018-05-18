@@ -65,19 +65,18 @@ Week 1 Assessment 2
 
 
 .. mchoice:: question1_1_1_3
+   :multiple_answers:
    :answer_a: a = len("hello worldwelcome!")
-   :answer_b: a = 19
-   :answer_c: a = 11 + 8
-   :answer_d: a = len(z) + len(y)
-   :answer_e: a = len("hello world") + len("welcome!")
-   :answer_f: none of the above are hardcoding.
+   :answer_b: a = 11 + 8
+   :answer_c: a = len(z) + len(y)
+   :answer_d: a = len("hello world") + len("welcome!")
+   :answer_e: none of the above are hardcoding.
    :feedback_a: Though we are using the ``len`` function here, we are hardcoding what len should return the length of. We are not referencing ``z`` or ``y``
-   :feedback_b: This is hardcoding, we are writing in the value without referencing ``z`` or ``y``
    :feedback_c: This is hardcoding, we are writing in the value without referencing ``z`` or ``y``
    :feedback_d: 
    :feedback_e: Though we are using the ``len`` function here, we are hardcoding what len should return the length of each time we call ``len``. We are not referencing ``z`` or ``y``
-   :feedback_f: Incorrect, at least one of these solutions is considered hardcoding. Take another look.
-   :correct: a,b,c,e
+   :feedback_f: At least one of these solutions is considered hardcoding. Take another look.
+   :correct: a,c,d
    :practice: T
    :topics: 
 

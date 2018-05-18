@@ -32,10 +32,10 @@ Week 3 Assessment 1
    :answer_b: ['world', 'travel', 'lights']
    :answer_c: ['travel', 'lights']
    :answer_d: ['world', 'travel']
-   :feedback_a: Incorrect, when we take a slice of something, it is inclusive of the first number and exclusive of the second.
-   :feedback_b: Incorrect, when we take a slice of something, it is inclusive of the first number and exclusive of the second. Additionally, Python is a zero-index based language.
-   :feedback_c: Correct.
-   :feedback_d: Incorrect, Python is a zero-index based language.
+   :feedback_a: When we take a slice of something, it is inclusive of the first number and exclusive of the second.
+   :feedback_b: When we take a slice of something, it is inclusive of the first number and exclusive of the second. Additionally, Python is a zero-index based language.
+   :feedback_c: Yes, python is a zero-index based language and slices are inclusive of the first number and exclusive of the second.
+   :feedback_d: Python is a zero-index based language.
    :correct: c 
    :practice: T
    :topics: 
@@ -53,11 +53,11 @@ Week 3 Assessment 1
    :answer_c: pzpzpzpzpz
    :answer_d: pppppzzzzz
    :answer_e: None of the above, an error will occur.
-   :feedback_a: Incorrect, the order of concatination matters.
-   :feedback_b: Incorrect, think about the order that the program is executed in, what occurs first?
-   :feedback_c: Correct.
-   :feedback_d: Incorrect, think about the order that the program is executed in, what occurs first?
-   :feedback_e: Incorrect, this is correct syntax and no errors will occur.
+   :feedback_a: The order of concatination matters.
+   :feedback_b: Think about the order that the program is executed in, what occurs first?
+   :feedback_c: Yes, because let_two was put before let, c has "pz" and then that is repeated five times.
+   :feedback_d: Think about the order that the program is executed in, what occurs first?
+   :feedback_e: This is correct syntax and no errors will occur.
    :correct: c
    :practice: T
    :topics: 

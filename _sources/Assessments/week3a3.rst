@@ -16,7 +16,7 @@ Week 3 Assessment 3
    :answer_a: yes
    :answer_b: no
    :feedback_a: Yes, the intent by the programmer was not executed properly if they wanted to print the list ['q', 'u'] because of aliasing.
-   :feedback_b: if the intent was to print the list ['q', 'u'] then aliasing would cause a problem because z also replaces the 'u' with an 'i'.
+   :feedback_b: If the intent was to print the list ['q', 'u'] then aliasing would cause a problem because z also replaces the 'u' with an 'i'.
    :correct: a
    :practice: T
    :topics: 

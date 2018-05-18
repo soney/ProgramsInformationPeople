@@ -13,28 +13,9 @@ Week 5 Assessment 2
 **Check your understanding**
 
 .. mchoice:: question5_2_1_1
-   :answer_a: 
-   .. sourcecode:: python
-   
-   nums = [4, 5, 2, 93, 3, 5]
-   s = 0
-   for n in nums:
-       s = s + 1
-
-   :answer_b: 
-   .. sourcecode:: python
-   
-   nums = [4, 5, 2, 93, 3, 5]
-   s = 0
-   for n in nums:
-       s = n + n
-   :answer_c: 
-   .. sourcecode:: python
-   
-   nums = [4, 5, 2, 93, 3, 5]
-   s = 0
-   for n in nums:
-       s = s + n
+   :answer_a: I.
+   :answer_b: II.
+   :answer_c: III.
    :answer_d: none of the above would be appropriate for the problem.
    :feedback_a: This pattern will only count how many items are in the list, not provide the total accumulated value.
    :feedback_b: This would reset the value of s each time the for loop iterated, and so by the end s would be assigned the value of the last item in the list plus the last item in the list.
@@ -45,38 +26,35 @@ Week 5 Assessment 2
    :topics: 
 
    Given that we want to accumulate the total sum of a list of numbers, which of the following accumulator patterns would be appropriate?
+   
+   I.
+   .. sourcecode:: python
+   
+   nums = [4, 5, 2, 93, 3, 5]
+   s = 0
+   for n in nums:
+       s = s + 1
+   II.
+   .. sourcecode:: python
+   
+   nums = [4, 5, 2, 93, 3, 5]
+   s = 0
+   for n in nums:
+       s = n + n
+   III.
+   .. sourcecode:: python
+   
+   nums = [4, 5, 2, 93, 3, 5]
+   s = 0
+   for n in nums:
+       s = s + n
+
 
 .. mchoice:: question5_2_1_2
-   :answer_a: 
-   .. sourcecode:: python
-   
-   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
-   s = 0
-   for n in nums:
-       s = s + n
-   :answer_b: 
-   .. sourcecode:: python
-   
-   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
-   for n in nums:
-       s = 0
-       if type(n) == type("string"):
-           s = s + 1
-   :answer_c: 
-   .. sourcecode:: python
-   
-   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
-   s = ""
-   for n in nums:
-       s = s + n
-   :answer_d: 
-   .. sourcecode:: python
-   
-   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
-   s = 0
-   for n in nums:
-       if type(n) == type("string"):
-           s = s + 1
+   :answer_a: I.
+   :answer_b: II.
+   :answer_c: III.
+   :answer_d: IV.
    :answer_e: none of the above would be appropriate for the problem. 
    :feedback_a: How does this solution know that the element of lst is a string and that s should be updated?
    :feedback_b: What happens to s each time the for loop iterates?
@@ -88,6 +66,37 @@ Week 5 Assessment 2
    :topics: 
 
    Given that we want to accumulate the total number of strings in the list, which of the following accumulator patterns would be appropriate?
+
+   I.
+   .. sourcecode:: python
+   
+   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+   s = 0
+   for n in nums:
+       s = s + n
+   II.
+   .. sourcecode:: python
+   
+   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+   for n in nums:
+       s = 0
+       if type(n) == type("string"):
+           s = s + 1
+   III.
+   .. sourcecode:: python
+   
+   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+   s = ""
+   for n in nums:
+       s = s + n
+   IV.
+   .. sourcecode:: python
+   
+   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+   s = 0
+   for n in nums:
+       if type(n) == type("string"):
+           s = s + 1
 
 .. mchoice:: question5_2_1_3
    :multiple_answers:

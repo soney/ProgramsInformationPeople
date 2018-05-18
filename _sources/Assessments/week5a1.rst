@@ -7,7 +7,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Week 5 Assignment 1
+Week 5 Assessment 1
 -------------------
 
 **Check your understanding**
@@ -89,7 +89,27 @@ Week 5 Assignment 1
    Which accumulation pattern is implemented in this code?
    .. sourcecode:: python
 
-   TODO
+.. activecode:: assess_week5_01
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithStrings
+
+   2. For each character in the string already saved in the variable ``str1``, append each character to a list called ``chars``.
+   ~~~~
+   str1 = "I love python"
+   # HINT: what's the accumulator? That should go here.
+      
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(chars, ['I', ' ', 'l', 'o', 'v', 'e', ' ', 'p', 'y', 't', 'h', 'o', 'n'], "Testing that chars is assigned to correct values.")
+
+   myTests().main()
 
 
 

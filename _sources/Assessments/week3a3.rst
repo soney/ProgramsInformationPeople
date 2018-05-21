@@ -12,7 +12,24 @@ Week 3 Assessment 3
 
 **Check your understanding**
 
-.. mchoice:: question3_3_1_1
+.. fillintheblank:: question3_3_1_1
+
+   What will be the value of ``a`` after the following code has executed?
+
+   .. sourcecode:: python
+
+    a = ["holiday", "celebrate!"]
+    quiet = a
+    quiet.append("company")
+
+
+   The value of ``a`` will be
+
+   -  :\[["']holiday["'], ["']celebrate!["'], ["']company["']\]: Good work!
+      :\[["']holiday["'], ["']celebrate!["']\]: This is the old value of a - a has changed.
+      :.*: Incorrect, try again.
+
+.. mchoice:: question3_3_1_2
    :answer_a: yes
    :answer_b: no
    :feedback_a: Yes, the intent by the programmer was not executed properly if they wanted to print the list ['q', 'u'] because of aliasing.
@@ -31,7 +48,7 @@ Week 3 Assessment 3
     z.remove('i')
     print(z)
 
-.. mchoice:: question3_3_1_2
+.. mchoice:: question3_3_1_3
    :answer_a: yes
    :answer_b: no
    :feedback_a: Though both lists have changed, it is not as likely to cause confusion.
@@ -52,10 +69,24 @@ Week 3 Assessment 3
     for item in z:
         print(item)
 
+.. mchoice:: question3_3_1_4
+   :answer_a: yes
+   :answer_b: no
+   :feedback_a: Since a string is immutable, aliasing won't be as confusing. Beware of using something like item = item + new_item with mutable objects though because it creates a new object. However, when we use += then that doesn't happen.
+   :feedback_b: Since a string is immutable, aliasing won't be as confusing. Beware of using something like item = item + new_item with mutable objects though because it creates a new object. However, when we use += then that doesn't happen.
+   :correct: b
+   :practice: T
+   :topics:
 
-.. not happy with this one yet, want something less complicated, too.
+   Could aliasing cause potential confusion in this problem?
 
-.. mchoice:: question3_3_1_3
+   .. sourcecode:: python
+
+    sent = "Holidays can be a fun time when you have good company!"
+    phrase = sent
+    phrase = phrase + " Holidays can also be fun on your own!"
+
+.. mchoice:: question3_3_1_5
    :answer_a: I.
    :answer_b: II.
    :answer_c: III.

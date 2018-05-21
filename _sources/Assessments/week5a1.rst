@@ -76,6 +76,26 @@ Week 5 Assessment 1
     for item in lst:
         num += item
 
+.. fillintheblank:: question5_1_1_4
+
+   What is the iterator variable in the following?
+
+   .. sourcecode:: python
+
+    rest = ["sleep", 'dormir', 'dormire', "slaap", 'sen', 'yuxu', 'yanam']
+    let = ''
+    for phrase in rest:
+        let += phrase[0]
+
+   The iterator variable is
+
+   -  :phrase: Good work!
+      :rest: rest is the sequence, not the iterator variable.
+      :let: let is the accumulator variable, not the iterator variable.
+      :.*: Incorrect, try again.
+
+
+
 .. activecode:: assess_week5_01
    :language: python
    :autograde: unittest

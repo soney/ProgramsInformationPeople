@@ -58,7 +58,7 @@ Week 1 Assessment 3
 
    What does each instance of the Turtle class represent?
 
-.. mchoice:: question1_3_1_1_6
+.. mchoice:: question1_3_1_1_4
    :answer_a: True
    :answer_b: False
    :feedback_a: Just like the variables you've learned about so far, you can assign values to an attribute and look up the values that are assigned to the attribute.
@@ -69,7 +69,7 @@ Week 1 Assessment 3
 
    True or False, attributes/instance variables are just like other variables in Python?
 
-.. mchoice:: question1_3_1_1_4
+.. mchoice:: question1_3_1_1_5
    :multiple_answers:
    :answer_a: Change the value of an attribute.
    :answer_b: Return values.
@@ -88,7 +88,7 @@ Week 1 Assessment 3
    Select all of the following things that methods can do:
 
 
-.. mchoice:: question1_3_1_1_5
+.. mchoice:: question1_3_1_1_6
    :answer_a: student.title()
    :answer_b: title.student()
    :answer_c: title.student
@@ -104,3 +104,54 @@ Week 1 Assessment 3
    :topics: 
 
    For an instance of a class that is assigned to the variable ``student``, what is the propper way to refer to the ``title`` attribute/instance variable?
+
+.. fillintheblank:: question1_3_1_1_7
+
+   What is the name of the attribute in the following code?
+
+   .. sourcecode:: python
+
+    import turtle
+
+    jane = turtle.Turtle()
+    jane.forward(20)
+    print(jane.x)
+
+   The attribute is
+
+   -  :x: Good work!
+      :jane: jane is an instance, not an attribute.
+      :forward: forward is a method, not an attribute.
+      :turtle: turtle is the class, not an attribute.
+      :Turtle: Turtle is a method, not an attribute
+      :.*: Incorrect, try again.
+
+.. fillintheblank:: question1_3_1_1_8
+
+   What is the name of the instances in the following code? Please put one instance per blank space and enter them in the order that the computer would read them.
+
+   .. sourcecode:: python
+
+    import turtle
+    wn = turtle.Screen()
+
+    jazz = turtle.Turtle()
+    jazz.forward(50)
+    jazz.right(90)
+    pop = turtle.Turtle()
+    pop.left(180)
+    pop.forward(76)
+
+
+   -  :wn: Good work!
+      :jazz: Try a different location
+      :pop: Try a different location
+      :.*: Incorrect, try again.
+   -  :jazz: Good work!
+      :wn: Try a different location
+      :pop: Try a different location
+      :.*: Incorrect, try again.
+   -  :pop: Good work!
+      :wn: Try a different location
+      :jazz: Try a different location
+      :.*: Incorrect, try again.

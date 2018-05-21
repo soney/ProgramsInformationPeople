@@ -35,7 +35,7 @@ Week 1 Assessment 1
    :feedback_a: Computers aren't necessarily better at solving problems, though often they can be quicker than humans. Additionally, algorithms can be used to solve non-computer related problems.
    :feedback_b: While it is beneficial to have a set of instructions that others can follow, this isn't the best answer. By creating the algorithm, you solve a problem for yourself and others.
    :feedback_c: Yes, by creating a general solution you can then express it as a program if you choose, and then use a computer to automate the execution.
-   :feedback_d: While it is beneficial to have a set of instructions, that is what an algorithm is, not why we would want to create one.
+   :feedback_d: While it is beneficial to have a set of instructions as that is what an algorithm **is**, it is not **why** we would want to create one.
    :correct: c
    :practice: T
    :topics: GeneralIntro/Algorithms
@@ -68,7 +68,3 @@ Week 1 Assessment 1
    :topics: GeneralIntro/FormalandNaturalLanguages
 
    True or False:  Reading a program is like reading other kinds of text.
-
-
-
-

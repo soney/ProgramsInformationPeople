@@ -18,7 +18,7 @@ Week 1 Assessment 2
     :autograde: unittest
     :topics: SimplePythonData/FunctionCalls
 
-    **2.** There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable called ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
+    **1.** There is a function we are providing in for you in this problem called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable called ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
     ~~~~
     xyz = ""
 
@@ -41,7 +41,7 @@ Week 1 Assessment 2
     :practice: T
     :topics: Sequences/SplitandJoin
 
-    **1.** Write code to assign the number of *characters* in the string ``rv`` to a variable ``num_chars``.
+    **2.** Write code to assign the number of *characters* in the string ``rv`` to a variable ``num_chars``.
     ~~~~
     rv = """Once upon a midnight dreary, while I pondered, weak and weary,
         Over many a quaint and curious volume of forgotten lore,
@@ -71,16 +71,16 @@ Week 1 Assessment 2
    :answer_c: a = len(z) + len(y)
    :answer_d: a = len("hello world") + len("welcome!")
    :answer_e: none of the above are hardcoding.
-   :feedback_a: Though we are using the ``len`` function here, we are hardcoding what len should return the length of. We are not referencing ``z`` or ``y``
-   :feedback_c: This is hardcoding, we are writing in the value without referencing ``z`` or ``y``
-   :feedback_d: 
-   :feedback_e: Though we are using the ``len`` function here, we are hardcoding what len should return the length of each time we call ``len``. We are not referencing ``z`` or ``y``
-   :feedback_f: At least one of these solutions is considered hardcoding. Take another look.
-   :correct: a,c,d
+   :feedback_a: Though we are using the len function here, we are hardcoding what len should return the length of. We are not referencing z or y.
+   :feedback_b: This is hardcoding, we are writing in the value without referencing z or y.
+   :feedback_c: This is not considered hard coding. We are using the function len to determine the length of what is stored in z and y, which is a correct way to approach this problem.
+   :feedback_d: Though we are using the len function here, we are hardcoding what len should return the length of each time we call len. We are not referencing z or y.
+   :feedback_e: At least one of these solutions is considered hardcoding. Take another look.
+   :correct: a,b,d
    :practice: T
    :topics: 
 
-   The code below initializes two variables, ``z`` and ``y``. We want assign the number of characters in ``z`` and in ``y`` to the variable ``a``. Which of the following solutions, if any, would be considered hard coding?
+   The code below initializes two variables, ``z`` and ``y``. We want assign the total number of characters in ``z`` and in ``y`` to the variable ``a``. Which of the following solutions, if any, would be considered hard coding?
    
    .. sourcecode:: python
 
@@ -93,7 +93,7 @@ Week 1 Assessment 2
     :nopre:
     :hidecode:
 
-    (This is not a problem set question) The code below defines functions used by several questions. Do not modify them, but feel free to take a look.
+    (This is not an assessment question) The code below defines functions used by one of the questions above. Do not modify the code, but feel free to take a look.
 
     ~~~~
 

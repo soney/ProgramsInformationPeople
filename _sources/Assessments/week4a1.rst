@@ -52,6 +52,7 @@ Week 4 Assignment
 
     # Write your code here.
 
+
     ====
 
     from unittest.gui import TestCaseGui
@@ -78,6 +79,8 @@ Week 4 Assignment
     Hard-coded answers will receive no credit.
     ~~~~
     items = ["whirring", "wow!", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
+
+
     =====
     from unittest.gui import TestCaseGui
 
@@ -106,6 +109,8 @@ Week 4 Assignment
     Hard-coded answers will receive no credit.
     ~~~~
     sentence = "python is a high level general purpose programming language that can be applied to many different classes of problems."
+
+
     =====
     from unittest.gui import TestCaseGui
 
@@ -128,6 +133,7 @@ Week 4 Assignment
     vowels = ['a','e','i','o','u']
 
     # Write your code here.
+
 
     =====
 

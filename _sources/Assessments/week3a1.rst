@@ -17,7 +17,7 @@ Week 3 Assessment 1
    :answer_b: II.
    :answer_c: Neither is the correct reference diagram.
    :feedback_a: Yes, when we are using the remove method, we are just editing the existing list, not making a new copy.
-   :feedback_b: When we use the remove method, we just edit the existing list, not make a new copy that does not include the removed object.
+   :feedback_b: When we use the remove method, we just edit the existing list. We do not make a new copy that does not include the removed object.
    :feedback_c: One of the diagrams is correct - look again at what is happening to lst.
    :correct: a
    :practice: T
@@ -26,17 +26,20 @@ Week 3 Assessment 1
    Which of these is a correct reference diagram following the execution of the following code?
 
    .. sourcecode:: python
-   lst = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto']
-   lst.remove('pluto')
-   first_three = lst[:2]
+   
+    lst = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto']
+    lst.remove('pluto')
+    first_three = lst[:2]
 
-   I.
+   I. 
+
    .. image:: Figures/week3a1_1.png
-   :alt: First Potential Solution
-   II.
-   .. image:: Figures/week3a1_2.png
-   :alt: Second Potential Solution
+      :alt: First Potential Solution
 
+   II. 
+
+   .. image:: Figures/week3a1_2.png
+      :alt: Second Potential Solution
 
 .. mchoice:: question3_1_1_2
    :answer_a: ['travel', 'lights', 'moon']
@@ -52,8 +55,9 @@ Week 3 Assessment 1
    :topics: 
 
    What will the output be for the following code?
+   
    .. sourcecode:: python
-
+   
     ls = ['run', 'world', 'travel', 'lights', 'moon', 'baseball', 'sea']
     new = ls[2:4]
     print(new)
@@ -64,7 +68,7 @@ Week 3 Assessment 1
    :answer_c: pzpzpzpzpz
    :answer_d: pppppzzzzz
    :answer_e: None of the above, an error will occur.
-   :feedback_a: The order of concatination matters.
+   :feedback_a: The order of concatenation matters.
    :feedback_b: Think about the order that the program is executed in, what occurs first?
    :feedback_c: Yes, because let_two was put before let, c has "pz" and then that is repeated five times.
    :feedback_d: Think about the order that the program is executed in, what occurs first?
@@ -74,13 +78,14 @@ Week 3 Assessment 1
    :topics: 
 
    What will the output be for the following code?
+  
    .. sourcecode:: python
 
-   let = "z"
-   let_two = "p"
-   c = let_two + let
-   m = c*5
-   print(m)
+    let = "z"
+    let_two = "p"
+    c = let_two + let
+    m = c*5
+    print(m)
 
 .. activecode:: a_03_01_01
     :language: python
@@ -98,7 +103,8 @@ Week 3 Assessment 1
     class myTests(TestCaseGui):
 
       def test_output(self):
-        self.assertEqual(last, ['curling', 'ping pong', 'hockey'], "Testing that the value of last is the last three items in sports (Don't worry about actual and expected values).")
+        self.assertEqual(last, ['curling', 'ping pong', 'hockey'], "Testing that the value of last is the last three items in sports.")
+        self.assertNotIn("[6:]", self.getEditorText(), "Testing that your code would work no matter how many items. (Don't worry about actual and expected values).")
         
 
     myTests().main()
@@ -122,11 +128,12 @@ Week 3 Assessment 1
     class myTests(TestCaseGui):
 
       def test_output(self):
-        self.assertEqual(by, 'You are', "Testing original variables (Don't worry about actual and expected values).")
-        self.assertEqual(az, 'doing a great ', "Testing original variables (Don't worry about actual and expected values).")
-        self.assertEqual(io, 'job', "Testing original variables (Don't worry about actual and expected values).")
-        self.assertEqual(qy, 'keep it up!', "Testing original variables (Don't worry about actual and expected values).")
+        self.assertEqual(by, 'You are', "Testing original variables.")
+        self.assertEqual(az, 'doing a great ', "Testing original variables.")
+        self.assertEqual(io, 'job', "Testing original variables.")
+        self.assertEqual(qy, 'keep it up!', "Testing original variables.")
         self.assertEqual(message, 'You are doing a great job, keep it up!', "Testing that the value of message is what was expected.")
+        self.assertNotIn("You are doing a great job, keep it up!", self.getEditorText(), "Testing for hardcoding (Don't worry about actual and expected values).")
         
 
     myTests().main()

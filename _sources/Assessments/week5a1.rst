@@ -26,14 +26,15 @@ Week 5 Assessment 1
    :topics: 
 
    Which of these is the accumulator variable?
+   
    .. sourcecode:: python
 
-   byzo = 'hello world!'
-   c = 0
-   for x in byzo:
-       z = x + "!"
-       print(z)
-       c = c + 1
+    byzo = 'hello world!'
+    c = 0
+    for x in byzo:
+        z = x + "!"
+        print(z)
+        c = c + 1
 
 .. mchoice:: question5_1_1_2
    :answer_a: cawdra
@@ -41,18 +42,19 @@ Week 5 Assessment 1
    :answer_c: t
    :feedback_a: Yes, this is the sequence that we iterate over.
    :feedback_b: This is the iterator variable. It changes each time but is not the whole sequence itself.
-   :feedback_c: This is the accumulator variable. By the end of the program, it will have a full count of how many characters are in the items are in cawdra.
+   :feedback_c: This is the accumulator variable. By the end of the program, it will have a full count of how many items are in cawdra.
    :correct: a
    :practice: T
    :topics: 
 
    Which of these is the sequence?
+   
    .. sourcecode:: python
 
-   cawdra = ['candy', 'daisy', 'pear', 'peach', 'gem', 'crown']
-   t = 0
-   for elem in cawdra:
-       t = t + len(elem)
+    cawdra = ['candy', 'daisy', 'pear', 'peach', 'gem', 'crown']
+    t = 0
+    for elem in cawdra:
+        t = t + len(elem)
 
 .. mchoice:: question5_1_1_3
    :answer_a: item
@@ -66,28 +68,13 @@ Week 5 Assessment 1
    :topics: 
 
    Which of these is the iterator variable?
+   
    .. sourcecode:: python
 
-   lst = [5, 10, 3, 8, 94, 2, 4, 9]
-   num = 0
-   for item in lst:
-       num += item
-
-.. mchoice:: question3_2_1_2
-   :answer_a: 
-   :answer_b: 
-   :answer_c: 
-   :answer_d: 
-   :feedback_a: 
-   :feedback_b: 
-   :feedback_c: 
-   :feedback_d: 
-   :correct: 
-   :practice: T
-   :topics: 
-
-   Which accumulation pattern is implemented in this code?
-   .. sourcecode:: python
+    lst = [5, 10, 3, 8, 94, 2, 4, 9]
+    num = 0
+    for item in lst:
+        num += item
 
 .. activecode:: assess_week5_01
    :language: python
@@ -95,7 +82,7 @@ Week 5 Assessment 1
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithStrings
 
-   2. For each character in the string already saved in the variable ``str1``, append each character to a list called ``chars``.
+   2. Currently there is a string called ``str1``. Write code to create a list called ``chars`` which should contain the characters from ``str1``. Each character in ``str1`` should be its own element in the list ``chars``.
    ~~~~
    str1 = "I love python"
    # HINT: what's the accumulator? That should go here.

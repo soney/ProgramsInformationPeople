@@ -28,26 +28,31 @@ Week 5 Assessment 2
    Given that we want to accumulate the total sum of a list of numbers, which of the following accumulator patterns would be appropriate?
    
    I.
+   
    .. sourcecode:: python
    
-   nums = [4, 5, 2, 93, 3, 5]
-   s = 0
-   for n in nums:
-       s = s + 1
+    nums = [4, 5, 2, 93, 3, 5]
+    s = 0
+    for n in nums:
+        s = s + 1
+   
    II.
+   
    .. sourcecode:: python
    
-   nums = [4, 5, 2, 93, 3, 5]
-   s = 0
-   for n in nums:
-       s = n + n
+    nums = [4, 5, 2, 93, 3, 5]
+    s = 0
+    for n in nums:
+        s = n + n
+   
    III.
+   
    .. sourcecode:: python
    
-   nums = [4, 5, 2, 93, 3, 5]
-   s = 0
-   for n in nums:
-       s = s + n
+    nums = [4, 5, 2, 93, 3, 5]
+    s = 0
+    for n in nums:
+        s = s + n
 
 
 .. mchoice:: question5_2_1_2
@@ -68,36 +73,43 @@ Week 5 Assessment 2
    Given that we want to accumulate the total number of strings in the list, which of the following accumulator patterns would be appropriate?
 
    I.
+   
    .. sourcecode:: python
    
-   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
-   s = 0
-   for n in nums:
-       s = s + n
+    lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+    s = 0
+    for n in nums:
+        s = s + n
+   
    II.
+   
    .. sourcecode:: python
    
-   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
-   for n in nums:
-       s = 0
-       if type(n) == type("string"):
-           s = s + 1
+    lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+    for n in nums:
+        s = 0
+        if type(n) == type("string"):
+            s = s + 1
+   
    III.
+   
    .. sourcecode:: python
    
-   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
-   s = ""
-   for n in nums:
-       s = s + n
+    lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+    s = ""
+    for n in nums:
+        s = s + n
+   
    IV.
+   
    .. sourcecode:: python
    
-   lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
-   s = 0
-   for n in nums:
-       if type(n) == type("string"):
-           s = s + 1
-
+    lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+    s = 0
+    for n in nums:
+        if type(n) == type("string"):
+            s = s + 1
+ 
 .. mchoice:: question5_2_1_3
    :multiple_answers:
    :answer_a: sum
@@ -105,7 +117,7 @@ Week 5 Assessment 2
    :answer_c: total
    :answer_d: accum
    :answer_e: none of the above
-   :feedback_a: No, though sum might be clear, it is also the name of a commonly used function in python, and so there can be issues if sum is used as an accumulator variable.
+   :feedback_a: No, though sum might be clear, it is also the name of a commonly used function in Python, and so there can be issues if sum is used as an accumulator variable.
    :feedback_b: No, x is not a clear enough name to be used for an accumulator variable.
    :feedback_c: Yes, total is a good name for accumulating numbers.
    :feedback_d: Yes, accum is a good name. It's both short and easy to remember.
@@ -159,13 +171,13 @@ Week 5 Assessment 2
    :answer_d: accumulator variable: total | iterator variable: sentences |sequence variable: word_lst
    :answer_e: none of the above
    :feedback_a: Though lst may be a good name, x and s are not clear names for accumulator and iterator variables.
-   :feedback_b: Though total and lst may be good names, x is not a clear name for the iterator variable.
+   :feedback_b: Though total, and lst may be good names, there is a more clear option since s is not very clear.
    :feedback_c: Though sentences and word_lst are good names, x is not the best name for an accumulator variable.
    :feedback_d: Yes, this combination of variable names is the most clear.
-   :feedback_e: 
+   :feedback_e: One of the options above has good names for the scenario.
    :correct: d
    :practice: T
    :topics: 
 
-   Given the following scenario, what are good names for the accumulator variable, iterator variable, and sequence variable? You are writing code that uses a list of sentences and accumulating the total number of sentences that have the word 'happy' in them.
+   Given the following scenario, what are good names for the accumulator variable, iterator variable, and sequence variable? You are writing code that uses a list of sentences and accumulates the total number of sentences that have the word 'happy' in them.
 

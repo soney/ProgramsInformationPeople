@@ -126,7 +126,7 @@ natural languages, can make a big difference in a formal language.
    The differences between natural and formal languages include:
 
 .. mchoice:: question1_10_2
-   :answer_a: True
+   :answer_a: True 
    :answer_b: False
    :feedback_a: It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.
    :feedback_b: It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.

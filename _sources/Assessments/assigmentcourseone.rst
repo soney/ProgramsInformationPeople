@@ -38,7 +38,7 @@ Assignment
    animals the same amount of time to arrive at home."""
          self.assertEqual(num_vowels, 80, "Testing that num_vowels is a number that contains the correct elements.")
          self.assertEqual(story, og_story, "Testing that story is still the original string assigned.")
-         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values)."
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values.)")
 
    myTests().main()
 
@@ -111,7 +111,6 @@ Assignment
          stripped_phrase = p_phrase.replace(" ", "").lower()
          stripped_r_phrase = r_phrase.replace(" ", "").lower()
          self.assertEqual(stripped_phrase, stripped_r_phrase, "checking that r_phrase and p_phrase are equivalent if the spaces are placed in the correct locations.")
-         self.assertIsNot(stripped_phrase, stripped_r_phrase, 'checking that r_phrase and phrase are not the same object.')
          self.assertIsNot(p_phrase, r_phrase, "checking that r_phrase and p_phrase are not the same object.")
 
    myTests().main()

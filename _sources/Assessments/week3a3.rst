@@ -23,13 +23,15 @@ Week 3 Assessment 3
 
    Could aliasing cause potential confusion in this problem?
 
-   b = ['q', 'u', 'i']
-   z = b
-   b[1] = 'i'
-   z.remove('i')
-   print(z)
+   .. sourcecode:: python
 
-.. mchoice:: question3_3_1_1
+    b = ['q', 'u', 'i']
+    z = b
+    b[1] = 'i'
+    z.remove('i')
+    print(z)
+
+.. mchoice:: question3_3_1_2
    :answer_a: yes
    :answer_b: no
    :feedback_a: Though both lists have changed, it is not as likely to cause confusion.
@@ -40,18 +42,20 @@ Week 3 Assessment 3
 
    Could aliasing cause potential confusion in this problem?
 
-   b = ['q', 'u', 'i']
-   z = b
-   b[1] = 'i'
-   for elem in b:
-       print(elem)
-   for item in z:
-       print(item)
+   .. sourcecode:: python
+  
+    b = ['q', 'u', 'i']
+    z = b
+    b[1] = 'i'
+    for elem in b:
+        print(elem)
+    for item in z:
+        print(item)
 
 
 .. not happy with this one yet, want something less complicated, too.
 
- .. mchoice:: question3_1_1_1
+.. mchoice:: question3_3_1_3
    :answer_a: I.
    :answer_b: II.
    :answer_c: III.
@@ -65,22 +69,30 @@ Week 3 Assessment 3
    :topics: 
 
    Which of these is a correct reference diagram following the execution of the following code?
+   
    .. sourcecode:: python
 
-   x = ["dogs", "cats", "birds", "reptiles"]
-   y = x
-   x += ['fish', 'horses']
-   y = y + ['sheep']
+    x = ["dogs", "cats", "birds", "reptiles"]
+    y = x
+    x += ['fish', 'horses']
+    y = y + ['sheep']
 
    I.
+
    .. image:: Figures/week3a3_1.png
-   :alt: First Potential Solution
+      :alt: First Potential Solution
+   
    II.
+
    .. image:: Figures/week3a3_2.png
-   :alt: Second Potential Solution
+      :alt: Second Potential Solution
+   
    III.
+
    .. image:: Figures/week3a3_3.png
-   :alt: Third Potential Solution
+      :alt: Third Potential Solution
+   
    IV.
+
    .. image:: Figures/week3a3_4.png
-   :alt: Fourth Potential Solution
+      :alt: Fourth Potential Solution

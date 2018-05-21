@@ -21,6 +21,24 @@
 Table of Contents
 :::::::::::::::::
 
+Assessments
+:::::::::::
+.. toctree::
+   :maxdepth: 2
+
+   Assessments/week1a1.rst
+   Assessments/week1a2.rst
+   Assessments/week1a3.rst
+   Assessments/week1a4.rst
+   Assessments/week2a1.rst
+   Assessments/week3a1.rst
+   Assessments/week3a2.rst
+   Assessments/week3a3.rst
+   Assessments/week4a1.rst
+   Assessments/week5a1.rst
+   Assessments/week5a2.rst
+   Assessments/assigmentcourseone.rst
+
 
 General Introduction
 ::::::::::::::::::::

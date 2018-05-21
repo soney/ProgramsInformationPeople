@@ -67,7 +67,7 @@ Week 2 Assessment 1
     :practice: T
     :topics: Iteration/Listsandforloops
 
-    **3.** Write code that uses iteration to print out **the length** of each element of the list stored in ``str_list``. You should see:
+    **3.** Write code that uses iteration to print out **the length** of each element of the list stored in ``str_list``.
     ~~~~
     str_list = ["hello", "", "goodbye", "wonderful", "I love Python"]
 
@@ -162,6 +162,8 @@ Week 2 Assessment 1
 
         def testOne(self):
            self.assertEqual(sum_val, 37, "Testing whether sum_val has the correct value")
+           self.assertIn('split', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+           self.assertIn('int', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
     myTests().main()
 
@@ -186,6 +188,8 @@ Week 2 Assessment 1
 
         def testOne(self):
             self.assertAlmostEqual(avg_temp, 80.67142857142858, 7, "Testing that avg_temp has the correct value")
+            self.assertIn('split', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+            self.assertIn('float', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
     myTests().main()
 

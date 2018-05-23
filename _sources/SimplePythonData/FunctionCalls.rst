@@ -45,6 +45,8 @@ Notice that when a function takes more than one input parameter, the inputs are 
 
 Again, remember that when python performs computations, the results are only shown in the output window if there's a print statement that says to do that.
 
+You may be wondering now if print is a function. As mentioned above, functions can compute new values when the functions are called or invoked. Fuctions can be used for more than mathmatical computation though. Print is also a function that programmers use often to output data or check what is happenning in their code. If you come across Python 2 code you may notice that print statements do not require parentheses even though print is still a function in that version of Python. This is one of the differences between Python 2 and Python 3. In this course, we will be teaching Python 3 and using the parentheses. Each time we use a print statement we are calling the print function to execute the code.
+
 Function calls as part of complex expressions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -87,7 +89,10 @@ Remember the earlier mention that some kinds of python objects don't have a nice
    print(square)
    print(sub)
 
-Print as a Function
-~~~~~~~~~~~~~~~~~~~
+We can do the same thing with the print function, however it looks odd in the textbook. If you print the print function in the textbook, then you will see ``<function <native JS>>``.
+Executing this code outside of the textbook though will return ``<built-in function print>``. 
 
-You may be wondering now if print is a function. As mentioned above, functions can compute new values when the functions are called or invoked. Fuctions can be used for more than mathmatical computation though. Print is also a function that programmers use often to output data or check what is happenning in their code. If you come across Python 2 code you may notice that print statements do not require parentheses even though print is still a function in that version of Python. This is one of the differences between Python 2 and Python 3. In this course, we will be teaching Python 3 and using the parentheses. Each time we use a print statement we are calling the print function to execute the code.
+.. activecode:: functionCalls_4
+   :nocanvas:
+
+   print(print)

@@ -79,5 +79,4 @@ quotes are removed.  However, if we print the type, we can see that it is defini
       print(int(53.785)) 
 
 
-.. index:: variable, assignment, assignment statement, state snapshot
 

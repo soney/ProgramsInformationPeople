@@ -32,7 +32,6 @@ referred to as the **accumulator pattern**.  We refer to the variable as the **a
 to making it work successfully is to be sure to initialize the variable before you start the iteration.
 Once inside the iteration, it is required that you update the accumulator.
 
-
 Here is the same program in codelens.  Step thru the function and watch the "running total" accumulate the result.
 
 .. codelens:: iter_accum2
@@ -49,6 +48,17 @@ Here is the same program in codelens.  Step thru the function and watch the "run
 
     What would happen if we indented the print accum statement? Not sure? Make a prediction, then try it and find out.
 
+We can use the accumulation pattern is count the number of something or to sum up a total. The above examples only covered how to get the sum for a list, but we can also count how many items are in it if we wanted to.
+
+.. activecode:: iter_accum3
+
+   nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+   count = 0
+   for w in nums:
+       count = count + 1
+   print(count)
+
+In this example we don't make use of ``w`` even though the iterator variable is a necessary part of constructing a for loop. Instead of adding the value of ``w`` to ``count`` we add a 1 to it, because we're incrementing the value of count when we iterate each time through the loop. Though in this scenario we could have used the ``len`` function, there are other cases later on where len won't be useful but we still need to count.
 
 **Check your understanding**
 

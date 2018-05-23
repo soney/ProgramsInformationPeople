@@ -75,9 +75,9 @@ Simple Python Data
    SimplePythonData/FunctionCalls.rst
    SimplePythonData/DataTypes.rst
    SimplePythonData/Typeconversionfunctions.rst
+   SimplePythonData/StatementsandExpressions.rst
    SimplePythonData/Variables.rst
    SimplePythonData/VariableNamesandKeywords.rst
-   SimplePythonData/StatementsandExpressions.rst
    SimplePythonData/OrderofOperations.rst
    SimplePythonData/BooleanValuesandBooleanExpressions.rst
    SimplePythonData/Logicaloperators.rst
@@ -164,6 +164,7 @@ Iteration
    Iteration/TheAccumulatorPattern.rst
    Iteration/TheAccumulatorPatternwithLists.rst
    Iteration/TheAccumulatorPatternwithStrings.rst
+   Iteration/TheAccumulatorPatternwithConditionals.rst
    Iteration/Glossary.rst
    Iteration/Exercises.rst
    Iteration/ExtraExercises.rst

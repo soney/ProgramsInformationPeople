@@ -159,6 +159,7 @@ Iteration
    Iteration/TheforLoop.rst
    Iteration/FlowofExecutionoftheforLoop.rst
    Iteration/Stringsandforloops.rst
+   Iteration/TheRangeFunction.rst
    Iteration/TraversalandtheforLoopByIndex.rst
    Iteration/Listsandforloops.rst
    Iteration/GeneralizedSequences.rst

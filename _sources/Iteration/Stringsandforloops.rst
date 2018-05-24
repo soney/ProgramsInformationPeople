@@ -12,7 +12,7 @@ Strings and ``for`` loops
 
 
 Since a string is simply a sequence of characters, the ``for`` loop iterates over each character automatically. (As always, try
-to predict what the output will be from this code before your run it.
+to predict what the output will be from this code before your run it.)
 
 .. activecode:: ch08_6
     :nocanvas:

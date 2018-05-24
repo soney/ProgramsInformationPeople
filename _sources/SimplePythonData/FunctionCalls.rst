@@ -16,6 +16,16 @@ Python adopts a similar syntax for invoking functions. If there is a named funct
 
 There are many built-in functions available in python. You'll be seeing some in this chapter and the next couple of chapters.
 
+Functions are like factories that take in some material, do some operation, and then send out the resulting object.
+
+.. image:: Figures/function_object.png
+   :alt: Represenation of a Function
+
+In this case, we refer to the materials as arguments or inputs and the resulting object is refered to as output or return value. This process of taking input, doing something, and then sending back the output is demonstrated in the gif below.
+
+.. image:: Figures/function_calls.gif
+   :alt: Represenation of a Function
+
 It is also possible for programmers to define new functions in their programs. You will learn how to do that later in the course. For now, you just need to learn how to invoke, or call, a function, and understand that the execution of the function returns a computed value.
 
 .. activecode:: functionCalls_1

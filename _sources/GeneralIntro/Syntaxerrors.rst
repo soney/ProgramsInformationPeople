@@ -24,6 +24,11 @@ to complete the execution of your program. During the first few weeks of your pr
 will probably spend a lot of time tracking down syntax errors. However, as you gain
 experience, you will make fewer errors and you will also be able to find your errors faster.
 
+Can you spot the syntax error in the code below?
+
+.. activecode:: ch_01_syntax_01
+
+   print("Hello World!"
 
 **Check your understanding**
 

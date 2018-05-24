@@ -135,6 +135,7 @@ Sequences
    Sequences/ListMembership.rst
    Sequences/ConcatenationandRepetition.rst
    Sequences/ListSlices.rst
+   Sequences/DisabmiguatingSquareBrackets.rst
    Sequences/SplitandJoin.rst
    Sequences/ListsareMutable.rst
    Sequences/ListDeletion.rst

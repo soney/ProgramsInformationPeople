@@ -165,6 +165,7 @@ Iteration
    Iteration/TheAccumulatorPatternwithLists.rst
    Iteration/TheAccumulatorPatternwithStrings.rst
    Iteration/TheAccumulatorPatternwithConditionals.rst
+   Iteration/AccumulatorPatternStrategies.rst
    Iteration/Glossary.rst
    Iteration/Exercises.rst
    Iteration/ExtraExercises.rst

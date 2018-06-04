@@ -6,15 +6,14 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-
 Generating Request URLs
 =======================
 
 In a REST API, the client or application program-- the kind of program you will be writing-- makes an HTTP request 
-that includes information about what kind of request it is making. Web sites are free to define whatever format they 
-want for how the request should be formatted. This chapter covers a particularly common and particularly simple 
-format, where the request information is encoded right in the URL. This is convenient, because if something goes 
-wrong, we can debug by copying the URL into a browser and see what happens when it tries to visit that URL.
+that includes information about what kind of request it is making. Web sites are free to define whatever format 
+they want for how the request should be formatted. This chapter covers a particularly common and particularly 
+simple format, where the request information is encoded right in the URL. This is convenient, because if something 
+goes wrong, we can debug by copying the URL into a browser and see what happens when it tries to visit that URL.
 
 In this format, the URL has a standard structure:
 
@@ -22,9 +21,9 @@ In this format, the URL has a standard structure:
 * a ``?`` character
 * one or more key-value pairs, formatted as ``key=value`` pairs and separated by the ``&`` character.
 
-For example, consider the URL ``https://itunes.apple.com/search?term=Ann+Arbor&entity=podcast``. Try copying that 
-URL into a browser. It data about podcasts posted from Ann Arbor, MI. Depending on your browser, it may put the 
-contents into a file attachment that you have to open up to see the contents.
+For example, consider the URL ``https://itunes.apple.com/search?term=Ann+Arbor&entity=podcast``. 
+Try copying that URL into a browser. It data about podcasts posted from Ann Arbor, MI. Depending on your browser, 
+it may put the contents into a file attachment that you have to open up to see the contents.
 
 Let's pull apart that URL. In this case, the FAA uses a slight variation on the basic structure described above.
 
@@ -32,7 +31,11 @@ Let's pull apart that URL. In this case, the FAA uses a slight variation on the 
 * a ``?`` character
 * key=value pairs. In this case, there are two pairs. The keys are ``term`` and ``entity``.
    
+.. image:: Figures/parameterformat.png
+
 All those parts are concatenated together to form the full URL.
+
+.. image:: Figures/urlstructure.png
 
 Note that in the search term Ann Arbor, the space had to be "encoded" as ``+``. More on that below.
 

@@ -15,13 +15,34 @@ Inheriting Variables and Methods
 Mechanics of Defining a Subclass
 --------------------------------
 
-We said that inheritance provides us a more elegant way of, for example, creating  ``Dog`` and ``Cat`` types, rather than making a very complex ``Pet`` class. In the abstract, this is pretty intuitive: all pets have certain things, but dogs are different from cats, which are different from birds. Going a step further, a Collie dog is different from a Labrador dog, for example. Inheritance provides us with an easy and elegant way to represent these differences.
+We said that inheritance provides us a more elegant way of, for example, creating  ``Dog`` and ``Cat`` types, 
+rather than making a very complex ``Pet`` class. In the abstract, this is pretty intuitive: all pets have certain 
+things, but dogs are different from cats, which are different from birds. Going a step further, a Collie dog is 
+different from a Labrador dog, for example. Inheritance provides us with an easy and elegant way to represent these 
+differences.
 
-Basically, it works by defining a new class, and using a special syntax to show what the new sub-class *inherits from* a super-class. So if you wanted to define a ``Dog`` class as a special kind of ``Pet``, you would say that the ``Dog`` type inherits from the ``Pet`` type. In the definition of the inherited class, you only need to specify the methods and instance variables that are different from the parent class (the **parent class**, or the **superclass**,  is what we may call the class that is *inherited from*. In the example we're discussing, ``Pet`` would be the superclass of ``Dog`` or ``Cat``).
+Basically, it works by defining a new class, and using a special syntax to show what the new sub-class 
+*inherits from* a super-class. So if you wanted to define a ``Dog`` class as a special kind of ``Pet``, you would 
+say that the ``Dog`` type inherits from the ``Pet`` type. In the definition of the inherited class, you only need 
+to specify the methods and instance variables that are different from the parent class (the **parent class**, or 
+the **superclass**,  is what we may call the class that is *inherited from*. In the example we're discussing, 
+``Pet`` would be the superclass of ``Dog`` or ``Cat``).
 
-Here is an example. Say we want to define a class ``Cat`` that inherits from ``Pet``. Assume we have the ``Pet`` class that we defined earlier.
+Here is an example. Say we want to define a class ``Cat`` that inherits from ``Pet``. Assume we have the ``Pet`` 
+class that we defined earlier.
 
-We want the ``Cat`` type to be exactly the same as ``Pet``, *except* we want the sound cats to start out knowing "meow" instead of "mrrp", and we want the ``Cat`` class to have its own special method called ``chasing_rats``, which only ``Cat`` s have.
+We want the ``Cat`` type to be exactly the same as ``Pet``, *except* we want the sound cats to start out knowing 
+"meow" instead of "mrrp", and we want the ``Cat`` class to have its own special method called ``chasing_rats``, 
+which only ``Cat`` s have.
+
+To map this example onto the image, below, the smallest, yellow piece can be considered the addition of the 
+``chasing_rats`` method. The yellow piece can then attach to the slightly larger, blue factory piece which 
+represents the ``Cat`` class. The blue factory piece then attaches to the largest, red factory piece, which 
+represents the ``Pet`` class. If we wanted to represent the ``Dog`` class, that might be a green factory, which 
+looks similar to the blue factory piece, but will not fit the yellow piece since that is specific to the ``Cat`` 
+class.
+
+.. image:: Figures/class_inheritance.png
 
 For reference, here's the original Tamagotchi code
 

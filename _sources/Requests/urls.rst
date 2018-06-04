@@ -6,8 +6,6 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-
-
 Anatomy of URLs
 ===============
 
@@ -36,4 +34,10 @@ For example, consider the url https://github.com/presnick/runestone:
 * github.com says to connect to the server at github.com, which currently maps to the IP address 192.30.252.130. The connection will be made on the default port, 80.
 
 * /presnick/runestone says to ask the remote server for the page presnick/runestone. It is up to the remote server to decide how to map that to the contents of a file it has access to, or to some content that it generates on the fly.
+
+The url http: //blueserver.com/path?k=val is another example that we can consider. The path here a bit different 
+from https://github.com/presnick/runestone because of how we ask for a specific page. Here the path is structured 
+similar to how we assign values of variables.
+
+.. image:: Figures/internet_requests.png
 

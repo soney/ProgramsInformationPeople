@@ -17,7 +17,12 @@ Raising and Catching Errors
 
 .. index:: try, except, Exception
 
-The try/except control structure provides a way to process a run-time error and continue on with program execution. Until now, any run-time error, such asking for the 8th item in a list with only 3 items, or dividing by 0, has caused the program execution to stop. In the browser ActiveCode windows, you get an error message in a box below. When you are executing python programs from the command-line, you also get an error message saying something about what went wrong and what line it occurred on. After the run-time error is encountered, the python interpreter does not try to execute the rest of the code. You have to make some change in your code and rerun the whole program.
+The try/except control structure provides a way to process a run-time error and continue on with program execution. 
+Until now, any run-time error, such asking for the 8th item in a list with only 3 items, or dividing by 0, has 
+caused the program execution to stop. In the browser ActiveCode windows, you get an error message in a box below. 
+When you are executing python programs from the command-line, you also get an error message saying something about 
+what went wrong and what line it occurred on. After the run-time error is encountered, the python interpreter does 
+not try to execute the rest of the code. You have to make some change in your code and rerun the whole program.
 
 With try/except, you tell the python interpreter:
 
@@ -29,6 +34,9 @@ With try/except, you tell the python interpreter:
    * execute a block of code in the "except" clause
    * then carry on with the rest of the program after the try/except statement
 
+.. image:: Figures/try_except.png
+   :alt: shows the two scenarios, either the try is executed successfully or the except is executed.
+
 .. sourcecode:: python
 
    try:
@@ -36,7 +44,14 @@ With try/except, you tell the python interpreter:
    except <ErrorType>:
       <exception handler code block>
 
-The syntax is fairly straightforward. The only tricky part is that after the word except, there can optionally be a specification of the kinds of errors that will be handled. The catchall is the class Exception. If you write ``except Exception:`` all runtime errors will be handled. If you specify a more restricted class of errors, only those errors will be handled; any other kind of error will still cause the program to stop running and an error message to be printed.
+The syntax is fairly straightforward. The only tricky part is that after the word except, there can optionally be a 
+specification of the kinds of errors that will be handled. The catchall is the class Exception. If you write 
+``except Exception:`` all runtime errors will be handled. If you specify a more restricted class of errors, only 
+those errors will be handled; any other kind of error will still cause the program to stop running and an error 
+message to be printed.
+
+.. image:: Figures/exception_types.png
+   :alt: shows three error types, KeyError, FileNotFoundError, and ZeroDivisionError. 
 
 The code below causes an error of type IndexError, by trying to access the third element of a two-element list.
 
@@ -46,7 +61,6 @@ The code below causes an error of type IndexError, by trying to access the third
    items = ['a', 'b']
    third = items[2]
    
-   
 The code below causes an error of type ZeroDivisionError, or less specifically ArithmeticError.
 
 .. activecode:: exceptions_2
@@ -55,7 +69,10 @@ The code below causes an error of type ZeroDivisionError, or less specifically A
    x = 5
    y = x/0
 
-Let's see what happens if we wrap some of this problematic code in a try/except statement. Note that ``this won't print`` doesn't print: when the error is encountered, the rest of the try block is skipped and the exception block is executed. When the except block is done, it continues on with the nex line of code that's outdented to the same level as the try: ``continuing`` is printed.
+Let's see what happens if we wrap some of this problematic code in a try/except statement. Note that ``this won't 
+print`` doesn't print: when the error is encountered, the rest of the try block is skipped and the exception block 
+is executed. When the except block is done, it continues on with the nex line of code that's outdented to the same 
+level as the try: ``continuing`` is printed.
 
 .. activecode:: exceptions_3
    :nocanvas:
@@ -95,7 +112,11 @@ If we catch only IndexEror, and we actually have a divide by zero error, the pro
    print("continuing again")
    
    
-There's one other useful feature. The exception code can access a variable that contains information about exactly what the error was. Thus, for example, in the except clause you could print out the information that would normally be printed as an error message but continue on with execution of the rest of the program. To do that, you specify a variable name after the exception class that's being handled. The exception clause code can refer to that variable name.
+There's one other useful feature. The exception code can access a variable that contains information about exactly 
+what the error was. Thus, for example, in the except clause you could print out the information that would normally 
+be printed as an error message but continue on with execution of the rest of the program. To do that, you specify a 
+variable name after the exception class that's being handled. The exception clause code can refer to that variable 
+name.
 
 .. activecode:: exceptions_5
    :nocanvas:
@@ -148,7 +169,6 @@ There's one other useful feature. The exception code can access a variable that 
 
    After a run-time exception is handled by an except clause, the rest of the code in the try clause will be executed.
 
-
 .. mchoice:: exceptions_mc4
    :practice: T
    :topics: Exceptions/intro-exceptions
@@ -173,5 +193,3 @@ There's one other useful feature. The exception code can access a variable that 
               print(1.0 / (3-i))
       except Exception as error_inst:
           print("Got an error", error_inst)
-
-

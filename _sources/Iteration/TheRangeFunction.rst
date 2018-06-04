@@ -11,7 +11,8 @@ The Range Function
 ==================
 
 Sometimes we want to iterate for a certain number of times, not just to iterate through a string. 
-For example, say that you want to print out "Hello, friend!" eight different times. Sure, you can write ``print("Hello, friend!")`` on eight different lines, but that's getting tedious. 
+For example, say that you want to print out "Hello, friend!" eight different times. 
+Sure, you can write ``print("Hello, friend!")`` on eight different lines, but that's tedious. 
 Imagine you had to do that for each of your friends. 
 Maybe you don't find it a bother because it's for your friends, but that might end up being a lot of work. 
 Thankfully, there's a handy function in python to solve this kind of problem.

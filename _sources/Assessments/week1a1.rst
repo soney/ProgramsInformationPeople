@@ -12,7 +12,7 @@ Week 1 Assessment 1
 
 **Check your understanding**
 
-.. mchoice:: question1_1_2
+.. mchoice:: question1_1_1
    :answer_a: A solution to a problem that can be solved by a computer.
    :answer_b: A step by step list of instructions that if followed exactly will solve the problem under consideration.
    :answer_c: A series of instructions implemented in a programming language.
@@ -27,7 +27,7 @@ Week 1 Assessment 1
 
    An algorithm is:
 
-.. mchoice:: question1_1_3
+.. mchoice:: question1_1_2
    :answer_a: Because computers are better at solving problems.
    :answer_b: So that you don't have to solve the problem yourself. 
    :answer_c: So that you have a general solution to a problem.
@@ -43,7 +43,7 @@ Week 1 Assessment 1
    Why create an algorithm?
 
 
-.. mchoice:: question1_10_1
+.. mchoice:: question1_1_3
    :answer_a: natural languages can be parsed while formal languages cannot.
    :answer_b: ambiguity, redundancy, and literalness.
    :answer_c: there are no differences between natural and formal languages.
@@ -58,7 +58,7 @@ Week 1 Assessment 1
 
    The differences between natural and formal languages include:
 
-.. mchoice:: question1_10_2
+.. mchoice:: question1_1_4
    :answer_a: True
    :answer_b: False
    :feedback_a: It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.
@@ -68,3 +68,21 @@ Week 1 Assessment 1
    :topics: GeneralIntro/FormalandNaturalLanguages
 
    True or False:  Reading a program is like reading other kinds of text.
+
+.. activecode:: question1_1_5
+   :language: python
+   :autograde: unittest
+
+   1 Write code to print out the phrase "Hello World".
+   ~~~~
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertIn("Hello World", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+   myTests().main()

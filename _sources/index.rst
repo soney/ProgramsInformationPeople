@@ -21,8 +21,6 @@
 Table of Contents
 :::::::::::::::::
 
-Assessments
-:::::::::::
 .. toctree::
    :maxdepth: 2
 
@@ -38,7 +36,6 @@ Assessments
    Assessments/week5a1.rst
    Assessments/week5a2.rst
    Assessments/assigmentcourseone.rst
-
 
 General Introduction
 ::::::::::::::::::::
@@ -61,7 +58,7 @@ General Introduction
    GeneralIntro/Comments.rst
    GeneralIntro/Glossary.rst
 
-
+.. the syntax errors page now has code, thanks to the coursera course. Move a Typical first program before then.
 
 Simple Python Data
 ::::::::::::::::::
@@ -84,7 +81,6 @@ Simple Python Data
    SimplePythonData/PrecedenceofOperators.rst
    SimplePythonData/Reassignment.rst
    SimplePythonData/UpdatingVariables.rst
-   SimplePythonData/HardCoding.rst
    SimplePythonData/Input.rst
    SimplePythonData/Glossary.rst
    SimplePythonData/Exercises.rst
@@ -629,6 +625,14 @@ In Class Exercises
    :hidden:
 
    assignments.rst
+
+106 Specific Content
+::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   SimplePythonData/HardCoding.rst
 
 
 Discussion Section Exercises

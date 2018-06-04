@@ -35,12 +35,11 @@ We want the ``Cat`` type to be exactly the same as ``Pet``, *except* we want the
 "meow" instead of "mrrp", and we want the ``Cat`` class to have its own special method called ``chasing_rats``, 
 which only ``Cat`` s have.
 
-To map this example onto the image, below, the smallest, yellow piece can be considered the addition of the 
-``chasing_rats`` method. The yellow piece can then attach to the slightly larger, blue factory piece which 
-represents the ``Cat`` class. The blue factory piece then attaches to the largest, red factory piece, which 
-represents the ``Pet`` class. If we wanted to represent the ``Dog`` class, that might be a green factory, which 
-looks similar to the blue factory piece, but will not fit the yellow piece since that is specific to the ``Cat`` 
-class.
+To map this example onto the image, below, the smallest, yellow piece is an instance of the method ``Cat``. The 
+yellow piece can then attach to the slightly larger, blue factory piece which represents the ``Cat`` class. The 
+blue factory piece then attaches to the largest, red factory piece, which represents the ``Pet`` class. If we 
+wanted to represent the ``Dog`` class, that might be a green factory, which looks similar to the blue factory 
+piece, but will not fit the yellow piece since that not an instance of the ``Cat`` class.
 
 .. image:: Figures/class_inheritance.png
 

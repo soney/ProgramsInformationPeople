@@ -29,6 +29,11 @@ The **update** step happens in two parts. First, we check to see if the value of
 
 At the end, we have accumulated a the total number of letters in the phrase. Without using the conditional, we would have only been able to count how many characters there are in the string and not been able to differentiate between spaces and non-spaces.
 
+We can also use ``==`` to execute a similar operation. Here, we'll check to see if the character we are iterating over is an "o". If it is an "o" then we will update our counter. 
+
+.. image:: Figures/accum_o.gif
+   :alt: a gif that shows code to check that "o" is in the phrase "onomatopoeia". 
+
 Accumulating the Max Value
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 

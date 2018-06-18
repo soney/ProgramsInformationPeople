@@ -157,5 +157,5 @@ For example, we can find out the data type of the current value of a variable by
      print(day)
 
 
-.. index:: keyword, underscore character
+
 

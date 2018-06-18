@@ -46,6 +46,49 @@ instructions.
 .. That may be a little vague, but we will come back to this topic later when we
 .. talk about **algorithms**.
 
+Preview of Control Structures
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We won't get too much into python control structures yet, but it is good to mention them early to give you a taste for what you can do with the language! 
+If these make sense to you now, that's great! 
+However, we don't expect you to understand these yet - understanding will come later. 
+
+First we have structures that allow us to iterate over something. 
+We can look at strings character-by-character or lists item-by-item until we've reached the end of them by using something called a ``for`` loop.
+
+.. activecode:: chap01_program_01
+
+   for character in "Cool string":
+       print(character)
+
+We can also iterate without a definite stopping point with ``while`` loops. 
+You might use this if you want to receive input from the user of your program but you don't know how long it'll take for them to be done with your code.
+
+.. activecode:: chap01_program_02
+
+   grocery_item = ""
+   while grocery_item != "done":
+       grocery_item = input("Please write down an item to add to your grocery list. When you are done writing the list then simply type: done")
+       print(grocery_item)
+
+Other structures will allow us to only run parts of our programs or only do some task if a certain set of conditions are found. 
+Conditionals, as they're called, allow us to do that. 
+Check out how adding conditionals to our code can change what we can write about regarding grocery shopping.
+
+.. activecode:: chap01_program_03
+
+   grocery_item = ""
+   grocery_list = []
+   while grocery_item != "done":
+       grocery_item = input("Please write down an item to add to your grocery list. When you are done writing the list then simply type: done")
+       if grocery_item == 'done':
+           continue
+       else:
+           print("adding the item to the list")
+           grocery_list.append(grocery_item)
+   print("Here is our grocery list:")
+   print(grocery_list)
+
 **Check your understanding**
 
 .. mchoice:: question1_4_1

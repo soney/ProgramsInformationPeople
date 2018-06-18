@@ -90,5 +90,5 @@ remember, what the variable is used for.
 
    True or False:  the following is a legal variable name in Python:   A_good_grade_is_A+
 
-.. index:: statement
+
 

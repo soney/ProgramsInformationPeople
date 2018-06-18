@@ -20,6 +20,8 @@ selecting a character:
     print(singers[7:11])
     print(singers[17:21])
     
+.. image:: Figures/slicing.png
+   :alt: visual of variable [first point : last point]
 
 The ``slice`` operator ``[n:m]`` returns the part of the string from the n'th character
 to the m'th character, *including the first* but *excluding the last*. 

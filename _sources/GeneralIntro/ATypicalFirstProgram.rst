@@ -25,7 +25,7 @@ print anything on paper. It displays a value on the screen. In this case, the re
 
     Hello, World!
 
-Here is the example in activecode.  Give it a try!
+Here is the example in activecode. Activecode windows allow you to execute python code while inside the textbook. When you click **Run** you will execute whatever code has been written in the window. Each time you hit **Run** a new version of the code will be saved in that activecode window's history. If you have already run code in the activecode window before and would like to revert your code to a prior save, click **Load History** and a bar will appear. Your most recent code will be on the right side of the bar, and the first time you clicked **Run** will be on the left side. Regardless of whether you've run the window in the past though, once you start to execute code the **Load History** button will change to the history bar. If you would like to see how python processes your code step-by-step then click on **Show CodeLens**. If you have already opened CodeLens and would like to step through different code then you'll need to refresh the page. Give it a try!
 
 .. activecode:: ch01_2
 

@@ -57,6 +57,12 @@ quotes are removed.  However, if we print the type, we can see that it is defini
     print(str(123.45))
     print(type(str(123.45)))
 
+Because we can only print one type at a time, if we want to print out a string and an integer then we have to convert 
+the type. Think about which type you'd need to convert, a string to an integer or an integer to a string?
+
+.. image:: Figures/type_cast.gif
+   :alt: a variable stores the value 55. a print statement tries to print "the value is" and the integer, but a runtime error occurs. Solution is to convert the integer into a string so that it only prints one type.
+
 **Check your understanding**
 
 .. mchoice:: test_question2_2_1
@@ -79,5 +85,4 @@ quotes are removed.  However, if we print the type, we can see that it is defini
       print(int(53.785)) 
 
 
-.. index:: variable, assignment, assignment statement, state snapshot
 

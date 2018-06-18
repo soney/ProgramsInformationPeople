@@ -27,11 +27,10 @@ Next, the iteration is performed 10 times.  Inside the for loop, the update occu
 ``w`` has the value of current item (1 the first time, then 2, then 3, etc.). 
 ``accum`` is reassigned a new value which is the old value plus the current value of ``w``.
 
-This pattern of iterating the updating of a variable is commonly
-referred to as the **accumulator pattern**.  We refer to the variable as the **accumulator**.  This pattern will come up over and over again.  Remember that the key
-to making it work successfully is to be sure to initialize the variable before you start the iteration.
-Once inside the iteration, it is required that you update the accumulator.
-
+This pattern of iterating the updating of a variable is commonly referred to as the **accumulator pattern**. 
+We refer to the variable as the **accumulator**. This pattern will come up over and over again. Remember that the key
+to making it work successfully is to be sure to initialize the variable before you start the iteration. Once inside 
+the iteration, it is required that you update the accumulator.
 
 Here is the same program in codelens.  Step thru the function and watch the "running total" accumulate the result.
 
@@ -49,6 +48,21 @@ Here is the same program in codelens.  Step thru the function and watch the "run
 
     What would happen if we indented the print accum statement? Not sure? Make a prediction, then try it and find out.
 
+We can use the accumulation pattern is count the number of something or to sum up a total. The above examples only 
+covered how to get the sum for a list, but we can also count how many items are in it if we wanted to.
+
+.. activecode:: iter_accum3
+
+   nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+   count = 0
+   for w in nums:
+       count = count + 1
+   print(count)
+
+In this example we don't make use of ``w`` even though the iterator variable is a necessary part of constructing a for 
+loop. Instead of adding the value of ``w`` to ``count`` we add a 1 to it, because we're incrementing the value of 
+count when we iterate each time through the loop. Though in this scenario we could have used the ``len`` function, 
+there are other cases later on where len won't be useful but we still need to count.
 
 **Check your understanding**
 

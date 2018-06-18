@@ -21,6 +21,21 @@
 Table of Contents
 :::::::::::::::::
 
+.. toctree::
+   :maxdepth: 2
+
+   Assessments/week1a1.rst
+   Assessments/week1a2.rst
+   Assessments/week1a3.rst
+   Assessments/week1a4.rst
+   Assessments/week2a1.rst
+   Assessments/week3a1.rst
+   Assessments/week3a2.rst
+   Assessments/week3a3.rst
+   Assessments/week4a1.rst
+   Assessments/week5a1.rst
+   Assessments/week5a2.rst
+   Assessments/assigmentcourseone.rst
 
 General Introduction
 ::::::::::::::::::::
@@ -43,7 +58,7 @@ General Introduction
    GeneralIntro/Comments.rst
    GeneralIntro/Glossary.rst
 
-
+.. the syntax errors page now has code, thanks to the coursera course. Move a Typical first program before then.
 
 Simple Python Data
 ::::::::::::::::::
@@ -57,16 +72,15 @@ Simple Python Data
    SimplePythonData/FunctionCalls.rst
    SimplePythonData/DataTypes.rst
    SimplePythonData/Typeconversionfunctions.rst
+   SimplePythonData/StatementsandExpressions.rst
    SimplePythonData/Variables.rst
    SimplePythonData/VariableNamesandKeywords.rst
-   SimplePythonData/StatementsandExpressions.rst
    SimplePythonData/OrderofOperations.rst
    SimplePythonData/BooleanValuesandBooleanExpressions.rst
    SimplePythonData/Logicaloperators.rst
    SimplePythonData/PrecedenceofOperators.rst
    SimplePythonData/Reassignment.rst
    SimplePythonData/UpdatingVariables.rst
-   SimplePythonData/HardCoding.rst
    SimplePythonData/Input.rst
    SimplePythonData/Glossary.rst
    SimplePythonData/Exercises.rst
@@ -117,6 +131,7 @@ Sequences
    Sequences/ListMembership.rst
    Sequences/ConcatenationandRepetition.rst
    Sequences/ListSlices.rst
+   Sequences/DisabmiguatingSquareBrackets.rst
    Sequences/SplitandJoin.rst
    Sequences/ListsareMutable.rst
    Sequences/ListDeletion.rst
@@ -140,12 +155,15 @@ Iteration
    Iteration/TheforLoop.rst
    Iteration/FlowofExecutionoftheforLoop.rst
    Iteration/Stringsandforloops.rst
+   Iteration/TheRangeFunction.rst
    Iteration/TraversalandtheforLoopByIndex.rst
    Iteration/Listsandforloops.rst
    Iteration/GeneralizedSequences.rst
    Iteration/TheAccumulatorPattern.rst
    Iteration/TheAccumulatorPatternwithLists.rst
    Iteration/TheAccumulatorPatternwithStrings.rst
+   Iteration/TheAccumulatorPatternwithConditionals.rst
+   Iteration/AccumulatorPatternStrategies.rst
    Iteration/Glossary.rst
    Iteration/Exercises.rst
    Iteration/ExtraExercises.rst
@@ -607,6 +625,14 @@ In Class Exercises
    :hidden:
 
    assignments.rst
+
+106 Specific Content
+::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   SimplePythonData/HardCoding.rst
 
 
 Discussion Section Exercises

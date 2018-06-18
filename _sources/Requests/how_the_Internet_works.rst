@@ -6,8 +6,6 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-
-
 The Internet: Behind the Scenes
 ===============================
 
@@ -25,8 +23,4 @@ The Internet is a transport mechanism that lets any connected device communicate
 
 * At the destination, the packets are reassembled into the original data message.
 
-.. Figure:: Figures/Internet.png
-
-   The interconnected devices in the middle are the routers.
-   
- 
+.. Figure:: Figures/routers.png

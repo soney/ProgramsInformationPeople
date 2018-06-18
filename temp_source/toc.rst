@@ -46,9 +46,9 @@ Simple Python Data
 
    SimplePythonData/ValuesandDataTypes.rst
    SimplePythonData/Typeconversionfunctions.rst
+   SimplePythonData/StatementsandExpressions.rst
    SimplePythonData/Variables.rst
    SimplePythonData/VariableNamesandKeywords.rst
-   SimplePythonData/StatementsandExpressions.rst
    SimplePythonData/OperatorsandOperands.rst
    SimplePythonData/Input.rst
    SimplePythonData/OrderofOperations.rst
